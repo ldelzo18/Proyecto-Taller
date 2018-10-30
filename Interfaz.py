@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import ttk
 
 sis = Tk()
-sis.resizable(True,True)
+sis.resizable(False,False)
 sis.geometry("300x350")
 sis.configure(bg = "white")
 sis.title("Sistema de ventas")
