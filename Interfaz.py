@@ -4,14 +4,17 @@ from tkinter import ttk
 
 sis = Tk()
 sis.resizable(False,False)
-sis.geometry("300x350")
+sis.geometry("300x300")#300x350
 sis.configure(bg = "white")
 sis.title("Sistema de ventas")
 
+miLogo=PhotoImage(file="Logo2.gif")
 
-ttk.Label(sis,text='Bienvenido a Tambo!\nEliga su idioma de preferencia:').place(x=65,y=50)
-ttk.Button(sis, text='English', command=quit).place(x=100,y=200)
-ttk.Button(sis,text='Español',command=quit).place(x=100,y=150)
+
+ttk.Label(sis,image=miLogo).place(x=90,y=40)
+ttk.Label(sis,text='       Bienvenido a OXXO!\nEliga su idioma de preferencia',font=("Comic Sans MS",12)).place(x=40,y=95)
+ttk.Button(sis, text='English',command=quit).place(x=100,y=160)
+ttk.Button(sis,text='Español',command=quit).place(x=100,y=210)
 
 
 
