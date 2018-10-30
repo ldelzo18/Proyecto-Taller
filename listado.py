@@ -16,5 +16,5 @@ if gaseosa[1] == 'Coca Cola':
 if gaseosa[2] == 'Fanta':
         print ("El precio es de 4.04 soles")
 
-if gaseosa[3] == '4up':
+if gaseosa[3] == '7up':
         print ("El precio es de 5.50 soles")
