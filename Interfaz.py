@@ -3,17 +3,16 @@ from tkinter import *
 from tkinter import ttk
 
 sis = Tk()
-sis.title("Sistema de ventas automatizado")
 sis.resizable(True,True)
-sis.geometry("800x500")
-sis.configure(bg = "beige")
+sis.geometry("300x350")
+sis.configure(bg = "white")
+sis.title("Sistema de ventas")
 
 
-myButton1 = Button(sis, text="Finalizar Compra",width=20,command=quit)
-myButton1.place(x=45, y=45)
+ttk.Label(sis,text='Bienvenido a Tambo!\nEliga su idioma de preferencia:').place(x=65,y=50)
+ttk.Button(sis, text='English', command=quit).place(x=100,y=200)
+ttk.Button(sis,text='Español',command=quit).place(x=100,y=150)
 
-ttk.Button(sis, text='Añadir al carrito', command=quit).pack(side=BOTTOM)
-ttk.Label(sis, text='Producto: ').pack(side=LEFT)
 
 
 
