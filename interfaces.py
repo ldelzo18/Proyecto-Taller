@@ -4,8 +4,8 @@ from tkinter import ttk
 def gISpanish():
     root = Tk()
     root.title("Sistema de Ventas")
-    root.geometry("700x400")
-    miFrame = Frame(root,width = 900,height = 700)
+    root.geometry("1100x800")
+    root.resizable(False,False)
 
     miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 19)).place(x = 40,y = 20)
 
@@ -28,8 +28,7 @@ def gISpanish():
 def gIEnglish():
     root = Tk()
     root.title("Sales System")
-    root.geometry("700x400")
-    miFrame = Frame(root,width = 900,height = 700)
+    root.geometry("1100x800")
 
     miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19)).place(x = 40,y = 20)
 
