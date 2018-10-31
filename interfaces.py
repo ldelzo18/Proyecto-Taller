@@ -11,9 +11,9 @@ def gISpanish():
 
     miBoton1 = ttk.Button(root, text = "Bebidas",command =botones_bebidas_es).place(x=40, y=60)
 
-    iBoton2 = ttk.Button(root, text = "Abarrotes",command =quit).place(x=40, y=100)
+    iBoton2 = ttk.Button(root, text = "Abarrotes",command =botones_abarrotes_es).place(x=40, y=100)
 
-    miBoton3 = ttk.Button(root, text = "Congelados",command =quit).place(x=40, y=140)
+    miBoton3 = ttk.Button(root, text = "Congelados",command =botones_congelados_es).place(x=40, y=140)
 
     miBoton4 = ttk.Button(root, text = "Comida Preparada",command =quit).place(x=40, y=180)
 
@@ -34,9 +34,9 @@ def gIEnglish():
 
     miBoton1 = ttk.Button(root, text = "Drinks",command =botones_bebidas_en).place(x=40, y=60)
 
-    miBoton2 = ttk.Button(root, text = "Groceries",command =quit).place(x=40, y=100)
+    miBoton2 = ttk.Button(root, text = "Groceries",command =botones_abarrotes_en).place(x=40, y=100)
 
-    miBoton3 = ttk.Button(root, text = "Frozen Food",command =quit).place(x=40, y=140)
+    miBoton3 = ttk.Button(root, text = "Frozen Food",command =botones_congelados_en).place(x=40, y=140)
 
     miBoton4 = ttk.Button(root, text = "Ready to take",command =quit).place(x=40, y=180)
 
