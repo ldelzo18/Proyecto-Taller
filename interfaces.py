@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-
+from funciones_botones import *
 def gISpanish():
     root = Tk()
     root.title("Sistema de Ventas")
@@ -9,7 +9,7 @@ def gISpanish():
 
     miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 19)).place(x = 40,y = 20)
 
-    miBoton1 = ttk.Button(root, text = "Bebidas",command =quit).place(x=40, y=60)
+    miBoton1 = ttk.Button(root, text = "Bebidas",command =botones_bebidas_es).place(x=40, y=60)
 
     iBoton2 = ttk.Button(root, text = "Abarrotes",command =quit).place(x=40, y=100)
 
@@ -32,7 +32,7 @@ def gIEnglish():
 
     miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19)).place(x = 40,y = 20)
 
-    miBoton1 = ttk.Button(root, text = "Drinks",command =quit).place(x=40, y=60)
+    miBoton1 = ttk.Button(root, text = "Drinks",command =botones_bebidas_en).place(x=40, y=60)
 
     miBoton2 = ttk.Button(root, text = "Groceries",command =quit).place(x=40, y=100)
 
