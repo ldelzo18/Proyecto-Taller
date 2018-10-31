@@ -36,29 +36,3 @@ while True :
 
 
           
-
-
-              
-        
-
-
-
-<<<<<<< HEAD
-                     
-        
-                        
-                        
-
-                
-                        
-
-
-
-
-    
-                
-        
-=======
-if gaseosa[3] == '7up':
-        print ("El precio es de 5.50 soles")
->>>>>>> 843924063ea354534eed39e5720acece3d2aa1b2
