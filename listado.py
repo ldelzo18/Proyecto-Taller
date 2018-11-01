@@ -22,7 +22,29 @@ contador_piqueo = 0
 contador_doña_pepa = 0
 contador_cereal_bar = 0
 contador_chokis = 0
+monto_total = 0
 
+
+precio_incacola = 0
+precio_cocacola = 0
+precio_fanta = 0
+precio_gaterode = 0
+precio_volt = 0
+precio_sporade = 0
+precio_freetea = 0
+precio_san_mateo = 0
+precio_cielo = 0
+
+precio_picaras = 0
+precio_lay = 0
+precio_doritos = 0
+precio_soda_field = 0
+precio_iberica = 0
+precio_sublime = 0
+precio_piqueo = 0
+precio_doña_pepa = 0
+precio_cereal_bar = 0
+precio_chokis = 0
 
 #Lista Bebidas energetica
 bebidas_energetica =["Gaterode 500 ml " ,"Volt 330 ml" , "FreeTea" , "Sporade"]
@@ -175,53 +197,89 @@ while True :
         #Gaseosas
         if (contador_incacola >= 1) :
                 print ("Cantidad :" , contador_incacola ,"Nombre" ,Gaseosa_producto[1] ,"Precio por unidad",Precio_Gaseosa[1] )
+                precio_incacola = contador_incacola*Precio_Gaseosa[1]
+                
         if (contador_cocacola >= 1) :
                 print ("Cantidad :" , contador_cocacola ,"Nombre" ,Gaseosa_producto[0] ,"Precio por unidad",Precio_Gaseosa[0] )
+                precio_cocacola = contador_cocacola*Precio_Gaseosa[0]
+                
         if (contador_fanta >= 1 ):
                 print("Cantidad :" , contador_fanta , "Nombre" , Gaseosa_producto[2] ,"Precio por unidad" , Precio_Gaseosa[2])
-
-
+                precio_fanta = contador_fanta*Precio_Gaseosa[2]
+                
+                
         #Bebidas Energizantes
         if (contador_gaterode >= 1 ):
                 print ("Cantidad :" , contador_gaterode ,"Nombre" ,bebidas_energetica[0] ,"Precio por unidad",precio_bebidas_energetica[0])
+                precio_gaterode = contador_gaterode*precio_bebidas_energetica[0]
         if (contador_volt >= 1) :
                 print ("Cantidad :" , contador_volt , "Nombre" , bebidas_energetica[1] ,"Precio por unidad" , precio_bebidas_energetica[1])
+                precio_volt = contador_volt*precio_bebidas_energetica[1]
         if (contador_freetea >= 1 ):
                 print("Cantidad :" , contador_freetea , "Nombre" , bebidas_energetica[2] ,"Precio por unidad" , precio_bebidas_energetica[2])
+                precio_freetea = contador_freetea*precio_bebidas_energetica[2]
         if (contador_sporade >= 1 ):
                 print("Cantidad :" , contador_sporade , "Nombre" , bebidas_energetica[3] ,"Precio por unidad" , precio_bebidas_energetica[3])
+                precio_sporade = contador_sporade*precio_bebidas_energetica[3]
         
         # Agua
         if (contador_san_mateo >= 1 ):
                 print("Cantidad :" , contador_san_mateo , "Nombre" , agua_producto[0] ,"Precio por unidad" , precio_agua[0])
+                precio_san_mateo= contador_san_mateo*precio_agua[0]
+                
         if (contador_cielo >= 1 ):
                 print("Cantidad :" , contador_cielo , "Nombre" , agua_producto[1] ,"Precio por unidad" , precio_agua[1])
+                precio_cielo =contador_cielo*precio_agua[1]
+              
 
         #Galleta
         if (contador_picaras >= 1 ):
                 print("Cantidad :" , contador_picaras , "Nombre" , galleta_producto[0] ,"Precio por unidad" , galleta_precio[0])
+                precio_picaras = contador_picaras*galleta_precio[0]
         if (contador_lay >= 1 ):
                 print("Cantidad :" , contador_lay, "Nombre" , galleta_producto[1] ,"Precio por unidad" , galleta_precio[1])
+                precio_lay= contador_lay*galleta_precio[1]
         if (contador_doritos >= 1 ):
                 print("Cantidad :" , contador_san_mateo , "Nombre" , galleta_producto[2] ,"Precio por unidad" , galleta_precio[2])
+                precio_doritos=contador_doritos*galleta_precio[2]
         if (contador_soda_field >= 1 ):
                 print("Cantidad :" , contador_soda_field , "Nombre" , galleta_producto[3] ,"Precio por unidad" , galleta_precio[3])
+                precio_soda_field = contador_soda_field*galleta_precio[3]
+                
         if (contador_iberica >= 1 ):
                 print("Cantidad :" , contador_iberica , "Nombre" , galleta_producto[4] ,"Precio por unidad" , galleta_precio[4])
+                precio_iberica = contador_iberica*galleta_precio[4]
+                
         if (contador_sublime >= 1 ):
                 print("Cantidad :" , contador_sublime  , "Nombre" , galleta_producto[5] ,"Precio por unidad" , galleta_precio[5])
+                precio_sublime = contador_sublime*galleta_precio[5]
+                
         if (contador_piqueo >= 1 ):
                 print("Cantidad :" , contador_piqueo , "Nombre" , galleta_producto[6] ,"Precio por unidad" , galleta_precio[6])
+                precio_piqueo = contador_piqueo*galleta_precio[6]
+                
         if (contador_doña_pepa >= 1 ):
                 print("Cantidad :" , contador_doña_pepa , "Nombre" , galleta_producto[7] ,"Precio por unidad" , galleta_precio[7])
+                precio_doña_pepa = contador_doña_pepa*galleta_precio[7]
+                
         if (contador_cereal_bar >= 1 ):
                 print("Cantidad :" , contador_cereal_bar , "Nombre" , galleta_producto[8] ,"Precio por unidad" , galleta_precio[8])
+                precio_cereal_bar = contador_cereal_bar*galleta_precio[8]
+                
         if (contador_chokis >= 1 ):
                 print("Cantidad :" , contador_chokis  , "Nombre" , galleta_producto[9] ,"Precio por unidad" , galleta_precio[9])
+                precio_chokis = contador_chokis*galleta_precio[9]
+                
 
+        monto_total = precio_incacola + precio_cocacola + precio_fanta + precio_volt + precio_gaterode + precio_freetea + precio_sporade + precio_san_mateo + precio_cielo + precio_picaras + precio_lay + precio_doritos + precio_soda_field + precio_iberica + precio_sublime + precio_piqueo + precio_doña_pepa + precio_cereal_bar + precio_chokis 
+         
+        
 
         decision =  input ("Desea continuar Si o No \n")
         if ( decision == "No"):
-                print ("gracias ;)") 
+                print ("monto total",monto_total)
+         
+
+                
                 break  
 
