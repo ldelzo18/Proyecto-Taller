@@ -270,7 +270,7 @@ while True :
                 print("Cantidad :" , contador_chokis  , "Nombre" , galleta_producto[9] ,"Precio por unidad" , galleta_precio[9])
                 precio_chokis = contador_chokis*galleta_precio[9]
                 
-
+        #total
         monto_total = precio_incacola + precio_cocacola + precio_fanta + precio_volt + precio_gaterode + precio_freetea + precio_sporade + precio_san_mateo + precio_cielo + precio_picaras + precio_lay + precio_doritos + precio_soda_field + precio_iberica + precio_sublime + precio_piqueo + precio_doña_pepa + precio_cereal_bar + precio_chokis 
          
         
