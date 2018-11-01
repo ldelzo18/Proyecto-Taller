@@ -72,7 +72,7 @@ def vuelto ():
     print("Cantidad de S/ 1 "  , moneda_1)
     print("Cantidad de 50 centavos" , moneda_50centavos)
     print("Cantidad de 20 centavos" , moneda_20centavos)
-    print("Cantidad de 20 centavos" , moneda_10centavos)
+    print("Cantidad de 10 centavos" , moneda_10centavos)
 
 vuelto()
 print("Gracias por la compra")
