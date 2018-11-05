@@ -46,17 +46,17 @@ def xd () :
         precio_chokis = 0
 
         #Lista Bebidas energetica
-        bebidas_energetica =["Gaterode 500 ml " ,"Volt 330 ml" , "FreeTea" , "Sporade"]
-        precio_bebidas_energetica = [2.50 , 3.00 , 3.50 , 4.00]
+        bebidas_energetica =["Gaterode 500 ml " ,"Volt 330 ml" , "FreeTea 450 ml" , "Sporade"]
+        precio_bebidas_energetica = [2.00 , 2.50 , 3.50 , 2.00]
         #Lista Gaseosa
-        Gaseosa_producto =["Coca Cola 450 ml " , "Inca Cola 450 ml" , "Fanta 400 ml" , "Pepsi 500 ml"]
-        Precio_Gaseosa = [2.45 , 2.45 , 3.00 , 1.80]
+        Gaseosa_producto =["Coca Cola 500 ml " , "Inca Cola 450 ml" , "Fanta 400 ml" , "Pepsi 500 ml"]
+        Precio_Gaseosa = [2.50 , 2.00 , 2.50 , 1.80]
         #Lista agua
         agua_producto =["San Mateo 450 ml" , "Cielo 620 ml"]
-        precio_agua = [3.50 , 2.00]
+        precio_agua = [3.00 , 2.00]
         #Lista galletas
         galleta_producto =["Picaras" , "Lays" , "Doritos" , "Soda Field" , "Iberica" , "Sublime" , "Piqueo Snacks" , "Doña Pepa " , "Cereal Bar" , "Chokis"]
-        galleta_precio = [1.40 , 1.00 , 1.00 , 0.60 , 1.20 , 1.00 , 1.20 , 0.70 , 1.00 , 1.30]
+        galleta_precio = [0.70 , 0.50 , 1.00 , 0.60 , 3.40 , 1.00 , 1.20 , 0.70 , 1.00 , 1.30]
 
         while True :
                 seleccion =  input ("Seleccione \n1=Bebidas \n2=Galletas\n" )
