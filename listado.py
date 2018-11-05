@@ -8,7 +8,6 @@ def xd () :
         contador_gaterode = 0
         contador_sporade = 0
         contador_freetea = 0
-
         contador_san_mateo = 0
         contador_cielo = 0
 
@@ -269,6 +268,6 @@ def xd () :
                         break
 
 
-xd()
 
-from vuelto import *
+
+
