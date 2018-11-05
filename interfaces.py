@@ -4,11 +4,11 @@ from funciones_botones import *
 def gISpanish():
     root = Tk()
     root.title("Sistema de Ventas")
-    root.geometry("800x800")
+    root.geometry("800x400")
     root.resizable(False,False)
 
-    miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19))
-    miLabel.grid(row=0,column=1)
+    miLabel = ttk.Label(root, text = "CATEGORIAS", font = ("TIMES NEW ROMAN", 19))
+    miLabel.grid(row=0,column=1,pady=5,padx=10)
 
     miBoton1 = ttk.Button(root, text = "Bebidas", width= 18,command =botones_bebidas_es)
     miBoton1.grid(row=2,column=1,pady=15,padx=10)
@@ -28,26 +28,35 @@ def gISpanish():
     miBoton6 = ttk.Button(root, text = "Pagar",width=15,command = quit)
     miBoton6.grid(row=12,column=5,pady=15,padx=10)
 
+    #entry_salida = Entry(root,state=DISABLED,width=80).place(x=280,y=50)
+
     root.mainloop()
 
 def gIEnglish():
     root = Tk()
     root.title("Sales System")
-    root.geometry("800x500")
+    root.geometry("800x400")
 
-    miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19)).place(x = 40,y = 20)
+    miLabel = ttk.Label(root, text = "CATEGORIES", font = ("TIMES NEW ROMAN", 19))
+    miLabel.grid(row=0,column=1,pady=5,padx=10)
 
-    miBoton1 = ttk.Button(root, text = "Drinks",command =botones_bebidas_en).place(x=40, y=100)
+    miBoton1 = ttk.Button(root, text = "Drinks", width= 18,command =botones_bebidas_es)
+    miBoton1.grid(row=2,column=1,pady=15,padx=10)
 
-    miBoton2 = ttk.Button(root, text = "Groceries",command =botones_abarrotes_en).place(x=40, y=180)
+    miBoton2 = ttk.Button(root, text = "Groceries",width=18,command =botones_abarrotes_es)
+    miBoton2.grid(row=4,column=1,pady=15,padx=10)
 
-    miBoton3 = ttk.Button(root, text = "Frozen Food",command =botones_congelados_en).place(x=40, y=260)
+    miBoton3 = ttk.Button(root, text = "Frozen Foods",width=18,command =botones_congelados_es)
+    miBoton3.grid(row=6,column=1,pady=15,padx=10)
 
-    miBoton4 = ttk.Button(root, text = "Ready to take",command =botones_comida_preparada_en).place(x=40, y=340)
+    miBoton4 = ttk.Button(root, text = "Ready to Take!",width=18,command =botones_comida_preparada_es)
+    miBoton4.grid(row=8,column=1,pady=15,padx=10)
 
-    miBoton5 = ttk.Button(root, text = "Personal Care",command =quit).place(x=40, y=420)
+    miBoton5 = ttk.Button(root, text = "Personal care",width=18,command =quit)
+    miBoton5.grid(row=10,column=1,pady=15,padx=10)
 
-    miBoton6 = ttk.Button(root, text = "Pay", command = quit).place(x=520, y = 440)
+    miBoton6 = ttk.Button(root, text = "Pay",width=15,command = quit)
+    miBoton6.grid(row=12,column=5,pady=15,padx=10)
 
 
     root.mainloop() 
