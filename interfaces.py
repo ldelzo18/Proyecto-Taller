@@ -10,26 +10,23 @@ def gISpanish():
     miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19))
     miLabel.grid(row=0,column=1)
 
-    miBoton1 = ttk.Button(root, text = "Bebidas",command =botones_bebidas_es)
-    miBoton1.grid(row=2,column=1)
+    miBoton1 = ttk.Button(root, text = "Bebidas", width= 18,command =botones_bebidas_es)
+    miBoton1.grid(row=2,column=1,pady=15,padx=10)
 
-    miBoton2 = ttk.Button(root, text = "Abarrotes",command =botones_abarrotes_es)
-    miBoton2.grid(row=2,column=2)
+    miBoton2 = ttk.Button(root, text = "Abarrotes",width=18,command =botones_abarrotes_es)
+    miBoton2.grid(row=4,column=1,pady=15,padx=10)
 
-    miBoton3 = ttk.Button(root, text = "Congelados",command =botones_congelados_es)
-    miBoton3.grid(row=3,column=1)
+    miBoton3 = ttk.Button(root, text = "Congelados",width=18,command =botones_congelados_es)
+    miBoton3.grid(row=6,column=1,pady=15,padx=10)
 
-    miBoton4 = ttk.Button(root, text = "Comida Preparada",command =botones_comida_preparada_es)
-    miBoton4.grid(row=3,column=2)
+    miBoton4 = ttk.Button(root, text = "Comida Preparada",width=18,command =botones_comida_preparada_es)
+    miBoton4.grid(row=8,column=1,pady=15,padx=10)
 
-    miBoton5 = ttk.Button(root, text = "Cuidado Personal",command =quit)
-    miBoton5.grid(row=4,column=1)
+    miBoton5 = ttk.Button(root, text = "Cuidado Personal",width=18,command =quit)
+    miBoton5.grid(row=10,column=1,pady=15,padx=10)
 
-    miBoton6 = ttk.Button(root, text = "Pagar", command = quit)
-    miBoton6.grid(row=4,column=2)
-
-    miBoton7 = ttk.Button(root, text = "Añadir", command =quit)
-    miBoton6.grid(row=4,column=4)
+    miBoton6 = ttk.Button(root, text = "Pagar",width=15,command = quit)
+    miBoton6.grid(row=12,column=5,pady=15,padx=10)
 
     root.mainloop()
 
