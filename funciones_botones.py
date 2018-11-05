@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-from tkinter import scrolledtext
+
 
 def botones_bebidas_es():
     beb = Tk()
@@ -20,10 +20,7 @@ def botones_bebidas_es():
     cieloboton = Button(beb, text ="  Cielo  ").place(x = 450, y = 370)
     sporboton = Button(beb, text="  Sporade  ").place(x= 600, y = 370)
 
-    txt = scrolledtext.ScrolledText(beb).place(x=240, y=90)
-    txt.grid(column=0,row=0)
     
-     
     beb.mainloop()
 
 
