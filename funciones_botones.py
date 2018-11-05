@@ -1,11 +1,13 @@
 from tkinter import *
 from tkinter import ttk
+from tkinter import scrolledtext
 
 def botones_bebidas_es():
     beb = Tk()
     beb.title("Catalogo de Bebidas")
     beb.geometry("1000x400")
     beb.resizable(False,False)
+
     cantidad = Entry(beb).place (x=20, y=30)
     inkaboton = Button(beb, text =" Inca Kola").place(x=50, y = 150)
     cocaboton = Button(beb, text =" Coca Kola").place(x = 150, y = 150)
@@ -17,7 +19,11 @@ def botones_bebidas_es():
     sanboton = Button(beb, text="  San Luis  ").place(x=300, y=370)
     cieloboton = Button(beb, text ="  Cielo  ").place(x = 450, y = 370)
     sporboton = Button(beb, text="  Sporade  ").place(x= 600, y = 370)
+
+    txt = scrolledtext.ScrolledText(beb).place(x=240, y=90)
+    txt.grid(column=0,row=0)
     
+     
     beb.mainloop()
 
 
