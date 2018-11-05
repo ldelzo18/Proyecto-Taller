@@ -7,21 +7,27 @@ def gISpanish():
     root.geometry("1100x800")
     root.resizable(False,False)
 
-    miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 19)).place(x = 40,y = 20)
+    logoDrink = PhotoImage(file="Drinks.gif")
 
-    miBoton1 = ttk.Button(root, text = "Bebidas",command =quit).place(x=40, y=60)
+    miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 18)).grid(row=1)
 
-    iBoton2 = ttk.Button(root, text = "Abarrotes",command =quit).place(x=40, y=100)
+    #putImgDrink = label(root,image=milabel).grid(row=0,column=0)
+    #miBoton1 = ttk.Button(root, text = "Bebidas",command =quit).place(x=40, y=150)
+    
 
-    miBoton3 = ttk.Button(root, text = "Congelados",command =quit).place(x=40, y=140)
+    #miBoton1.config(image=logoDrink,width="60",height="51")
 
-    miBoton4 = ttk.Button(root, text = "Comida Preparada",command =quit).place(x=40, y=180)
+    #miBoton2 = ttk.Button(root, text = "Abarrotes",command =quit).place(x=40, y=100)
 
-    miBoton5 = ttk.Button(root, text = "Cuidado Personal",command =quit).place(x=40, y=220)
+    #miBoton3 = ttk.Button(root, text = "Congelados",command =quit).place(x=40, y=140)
 
-    miBoton6 = ttk.Button(root, text = "Pagar", command = quit).place(x=120, y = 300)
+    #miBoton4 = ttk.Button(root, text = "Comida Preparada",command =quit).place(x=40, y=180)
 
-    miBoton7 = ttk.Button(root, text = "Añadir", command =quit).place(x=270, y = 300)
+    #miBoton5 = ttk.Button(root, text = "Cuidado Personal",command =quit).place(x=40, y=220)
+
+    #miBoton6 = ttk.Button(root, text = "Pagar", command = quit).place(x=120, y = 300)
+
+    #miBoton7 = ttk.Button(root, text = "Añadir", command =quit).place(x=270, y = 300)
 
     root.mainloop()
 

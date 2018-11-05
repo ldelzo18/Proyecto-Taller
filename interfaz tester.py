@@ -1,6 +1,5 @@
 #prueba
 from tkinter import *
-from tkinter import ttk
 from interfaces import *
 
 sis = Tk()
