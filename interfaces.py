@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-
+from funciones_botones import *
 def gISpanish():
     root = Tk()
     root.title("Sistema de Ventas")
@@ -9,13 +9,11 @@ def gISpanish():
 
     logoDrink = PhotoImage(file="Drinks.gif")
 
-    miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 18)).grid(row=1)
+    miBoton1 = ttk.Button(root, text = "Bebidas",command =botones_bebidas_es).place(x=40, y=60)
 
-    #putImgDrink = label(root,image=milabel).grid(row=0,column=0)
-    #miBoton1 = ttk.Button(root, text = "Bebidas",command =quit).place(x=40, y=150)
-    
+    iBoton2 = ttk.Button(root, text = "Abarrotes",command =botones_abarrotes_es).place(x=40, y=100)
 
-    #miBoton1.config(image=logoDrink,width="60",height="51")
+    miBoton3 = ttk.Button(root, text = "Congelados",command =botones_congelados_es).place(x=40, y=140)
 
     #miBoton2 = ttk.Button(root, text = "Abarrotes",command =quit).place(x=40, y=100)
 
@@ -38,11 +36,11 @@ def gIEnglish():
 
     miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19)).place(x = 40,y = 20)
 
-    miBoton1 = ttk.Button(root, text = "Drinks",command =quit).place(x=40, y=60)
+    miBoton1 = ttk.Button(root, text = "Drinks",command =botones_bebidas_en).place(x=40, y=60)
 
-    miBoton2 = ttk.Button(root, text = "Groceries",command =quit).place(x=40, y=100)
+    miBoton2 = ttk.Button(root, text = "Groceries",command =botones_abarrotes_en).place(x=40, y=100)
 
-    miBoton3 = ttk.Button(root, text = "Frozen Food",command =quit).place(x=40, y=140)
+    miBoton3 = ttk.Button(root, text = "Frozen Food",command =botones_congelados_en).place(x=40, y=140)
 
     miBoton4 = ttk.Button(root, text = "Ready to take",command =quit).place(x=40, y=180)
 
