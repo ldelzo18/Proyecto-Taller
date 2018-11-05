@@ -1,4 +1,4 @@
-#prueba
+
 from tkinter import *
 
 from interfaces import *
