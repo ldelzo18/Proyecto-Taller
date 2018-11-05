@@ -22,15 +22,13 @@ def gISpanish():
     miBoton4 = ttk.Button(root, text = "Comida Preparada",command =botones_comida_preparada_es)
     miBoton4.grid(row=3,column=2)
 
-    miBoton5 = ttk.Button(root, text = "Cuidado Personal",command =quit)
+    miBoton5 = ttk.Button(root, text = "Cuidado Personal",command =botones_cuidado_personal_es)
     miBoton5.grid(row=4,column=1)
 
     miBoton6 = ttk.Button(root, text = "Pagar", command = quit)
     miBoton6.grid(row=4,column=2)
 
-    miBoton7 = ttk.Button(root, text = "Añadir", command =quit)
-    miBoton6.grid(row=4,column=4)
-
+    
     root.mainloop()
 
 def gIEnglish():
@@ -48,7 +46,7 @@ def gIEnglish():
 
     miBoton4 = ttk.Button(root, text = "Ready to take",command =botones_comida_preparada_en).place(x=40, y=340)
 
-    miBoton5 = ttk.Button(root, text = "Personal Care",command =quit).place(x=40, y=420)
+    miBoton5 = ttk.Button(root, text = "Personal Care",command =botones_cuidado_personal_en).place(x=40, y=420)
 
     miBoton6 = ttk.Button(root, text = "Pay", command = quit).place(x=520, y = 440)
 
