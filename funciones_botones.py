@@ -5,7 +5,7 @@ from tkinter import ttk
 def botones_bebidas_es():
     beb = Tk()
     beb.title("Catalogo de Bebidas")
-    beb.geometry("1000x400")
+    beb.geometry("800x400")
     beb.resizable(False,False)
 
     cantidad = Entry(beb).place (x=20, y=30)
@@ -31,7 +31,7 @@ def botones_bebidas_es():
 def botones_bebidas_en():
     beb = Tk()
     beb.title("Drinks Catalogue")
-    beb.geometry("1000x400")
+    beb.geometry("800x400")
     beb.resizable(False,False)
     cantidad = Entry(beb).place (x=20, y=30)
     inkaboton = Button(beb, text = "Inca Kola 500ml ").place(x=50, y = 150)
@@ -50,7 +50,7 @@ def botones_bebidas_en():
 def botones_abarrotes_es():
     aba = Tk()
     aba.title("Catalogo de Abarrotes")
-    aba.geometry("1000x400")
+    aba.geometry("800x400")
     aba.resizable(False,False)
     cantidad = Entry(aba).place(x = 20, y = 30)
     picaboton = Button(aba, text = "Picaras").place(x=50, y = 150)
@@ -69,7 +69,7 @@ def botones_abarrotes_es():
 def botones_abarrotes_en():
     aba = Tk()
     aba.title("Groceries Catalogue")
-    aba.geometry("1000x400")
+    aba.geometry("800x400")
     aba.resizable(False,False)
     cantidad = Entry(aba).place(x = 20, y = 30)
     picaboton = Button(aba, text = "Picaras").place(x=50, y = 150)
@@ -91,7 +91,7 @@ def botones_abarrotes_en():
 def botones_congelados_es():
     cong = Tk()
     cong.title("Catalogo de Productos Congelados")
-    cong.geometry("1000x400")
+    cong.geometry("800x400")
     cong.resizable(False,False)
     cantidad= Entry(cong).place(x=20,y=30)
     luboton = Button(cong, text = "Donofrio Lucuma 1L").place(x=50, y = 150)
@@ -113,7 +113,7 @@ def botones_congelados_es():
 def botones_congelados_en():
     cong = Tk()
     cong.title("Catalogo de Productos Congelados")
-    cong.geometry("1000x400")
+    cong.geometry("800x400")
     cong.resizable(False,False)
     cantidad= Entry(cong).place(x=20,y=30)
     luboton = Button(cong, text = "Donofrio Lucuma 1L").place(x=50, y = 150)
@@ -134,7 +134,7 @@ def botones_congelados_en():
 def botones_comida_preparada_es():
     com = Tk()
     com.title("Catalogo Comida Preparada")    
-    com.geometry("600x300")
+    com.geometry("500x300")
     com.resizable(False,False)
     cantidad = Entry(com).place(x=20,y=30)
     hamb_car_boton = Button(com, text = " Hamburguesa de Carne ").place(x=50,y=150)
@@ -149,7 +149,7 @@ def botones_comida_preparada_es():
 def botones_comida_preparada_en():
     com = Tk()
     com.title("Ready to take Catalogue")    
-    com.geometry("600x300")
+    com.geometry("500x300")
     com.resizable(False,False)
     cantidad = Entry(com).place(x=20,y=30)
     hamb_car_boton = Button(com, text = " Meat Hamburger ").place(x=50,y=150)
@@ -162,7 +162,7 @@ def botones_comida_preparada_en():
 def botones_cuidado_personal_es():
     cui = Tk()
     cui.title("Catalogo de Productos de Cuidado Personal")
-    cui.geometry("900x400")
+    cui.geometry("700x400")
     cui.resizable(False,False)
     cantidad = Entry(cui).place(x=20,y=30)
     jabon_boton = Button(cui, text = " Jabon Dove ").place(x=50,y=150)
@@ -170,7 +170,7 @@ def botones_cuidado_personal_es():
     pasta_boton = Button(cui, text = " Pasta de dientes Colgate ").place(x=350,y=150)
     cepi_boton = Button(cui, text = " Cepillo Colgate ").place(x=50,y=370)
     gill_boton = Button(cui, text = " Hoja de afeitar Gillet ").place(x=200,y=370)
-    lady_boton = Button(cui, text = " Toallas femeninas LadySoft ").place(x=600,y=370)
+    lady_boton = Button(cui, text = " Toallas femeninas LadySoft ").place(x=350,y=370)
 
     cui.mainloop()
 
@@ -179,7 +179,7 @@ def botones_cuidado_personal_es():
 def botones_cuidado_personal_en():
     cui = Tk()
     cui.title("Catalogo de Productos de Cuidado Personal")
-    cui.geometry("900x400")
+    cui.geometry("700x400")
     cui.resizable(False,False)
     cantidad = Entry(cui).place(x=20,y=30)
     jabon_boton = Button(cui, text = " Soap Dove ").place(x=50,y=150)
@@ -187,6 +187,6 @@ def botones_cuidado_personal_en():
     pasta_boton = Button(cui, text = " Toothpaste Colgate ").place(x=350,y=150)
     cepi_boton = Button(cui, text = " Toothbrush Colgate ").place(x=50,y=370)
     gill_boton = Button(cui, text = " Gillet Razor Blade ").place(x=200,y=370)
-    always_boton = Button(cui, text = " Pads Always ").place(x=600,y=370)    
+    always_boton = Button(cui, text = " Pads Always ").place(x=350,y=370)    
 
     cui.mainloop()

@@ -7,7 +7,7 @@ def gISpanish():
     root.geometry("800x800")
     root.resizable(False,False)
 
-    miLabel = ttk.Label(root, text = "Products", font = ("Arial", 19))
+    miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 19))
     miLabel.grid(row=0,column=1)
 
     miBoton1 = ttk.Button(root, text = "Bebidas", width= 18,command =botones_bebidas_es)
