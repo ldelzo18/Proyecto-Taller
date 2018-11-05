@@ -7,7 +7,7 @@ def gISpanish():
     root.geometry("800x500")
     root.resizable(False,False)
 
-    miLabel = ttk.Label(root, text = "Productos", font = ("Arial", 19)).place(x = 40,y = 20)
+    logoDrink = PhotoImage(file="Drinks.gif")
 
     miBoton1 = ttk.Button(root, text = "Bebidas",command =botones_bebidas_es).place(x=40, y=100)
 
