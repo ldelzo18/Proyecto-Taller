@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import ttk
-
+from productos import *
 
 def botones_bebidas_es():
     beb = Tk()
@@ -10,20 +10,19 @@ def botones_bebidas_es():
     beb.title("Lista de bebidas")
 
     titulo_categoria = Label(beb,text="BEBIDAS",font = ("TIMES NEW ROMAN", 16))
-    
     myLabel1 = ttk.Label(beb,text="Cantidad:",font = ("Arial", 12))
     cantidad = Entry(beb)
-    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15)
-    cocaboton = Button(beb, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15)
-    fantaboton = Button(beb, text ="  Fanta  500ml ",font = ("Arial", 12),width=15) 
-    gateboton = Button(beb, text =" Gatorade 500ml ",font = ("Arial", 12),width=15)
-    voltboton = Button(beb, text ="   Volt 450ml  ",font = ("Arial", 12),width=15)
-    pepsiboton = Button(beb, text ="  Pepsi 500ml ",font = ("Arial", 12),width=15)
-    freeboton = Button(beb, text ="  FreeTea 500ml ",font = ("Arial", 12),width=15)
-    sanboton = Button(beb, text="  San Luis 625ml ",font = ("Arial", 12),width=15)
-    cieloboton = Button(beb, text ="  Cielo 625ml ",font = ("Arial", 12),width=15)
-    sporboton = Button(beb, text="  Sporade  500ml ",font = ("Arial", 12),width=15)
-
+    inkaboton = Button(beb,command=addInkaKola, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15)
+    cocaboton = Button(beb,command=addCocaKola, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15)
+    fantaboton = Button(beb,command=addFanta ,text ="  Fanta  500ml ",font = ("Arial", 12),width=15) 
+    gateboton = Button(beb,command =addGatorade  ,text =" Gatorade 500ml ",font = ("Arial", 12),width=15)
+    voltboton = Button(beb,command=addVolt, text ="   Volt 450ml  ",font = ("Arial", 12),width=15)
+    pepsiboton = Button(beb,command=addPepsi ,text ="  Pepsi 500ml ",font = ("Arial", 12),width=15)
+    freeboton = Button(beb,command=addFreeTea, text ="  FreeTea 500ml ",font = ("Arial", 12),width=15)
+    sanboton = Button(beb,command=addSanLuis ,text="  San Luis 625ml ",font = ("Arial", 12),width=15)
+    cieloboton = Button(beb,command=addCielo ,text ="  Cielo 625ml ",font = ("Arial", 12),width=15)
+    sporboton = Button(beb,command=addSporade, text="  Sporade  500ml ",font = ("Arial", 12),width=15)
+    
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)
     cantidad.grid(row=1,column=1,padx=5,pady=5)
@@ -400,6 +399,7 @@ def botones_cuidado_personal_en():
 
     cui.mainloop()
 
+<<<<<<< HEAD
 def imprimirLista(lista_Producto,lista_Precios,textArea):
     temp = ""
     for x in lista_Producto:
@@ -414,3 +414,5 @@ def addInkaKola(lista_Producto,lista_Precios,cantidad):
         lista_Producto.append("Inka Kola 500 ml")
         lista_Precios.append(2.00)
         
+=======
+>>>>>>> 868368653337773379b661f8b33898235312885c
