@@ -2,6 +2,10 @@ from tkinter import *
 from tkinter import ttk
 from funciones_botones import *
 def gISpanish():
+    #ArrayLists de productos y precios
+    list_producto = []
+    list_precios = []
+
     root = Tk()
     root.title("Sistema de Ventas")
     root.geometry("600x600")
@@ -27,17 +31,21 @@ def gISpanish():
     miBoton5 = ttk.Button(root, text = "Cuidado Personal",width=18,command =botones_cuidado_personal_es)
     miBoton5.grid(row=5,column=0,padx=20)
 
-    miBoton6 = ttk.Button(root, text = "Pagar",width=15,command = quit)
-    miBoton6.grid(row=6,column=0,padx=20)
-
     txt = Text(root,width=50,heigh=35,wrap=WORD)
     txt.grid(row=0,column=1,rowspan=7,sticky=E)
 
-    #entry_salida = Entry(root,state=DISABLED,width=80).place(x=280,y=50)
+    miBoton6 = ttk.Button(root, text = "Pagar",width=15,command = imprimirLista(list_producto,list_precios,txt))
+    miBoton6.grid(row=6,column=0,padx=20)
+
+    
 
     root.mainloop()
 
 def gIEnglish():
+    #ArrayLists de productos y precios
+    Producto = []
+    Precios = []
+
     root = Tk()
     root.title("Sales System")
     root.geometry("600x600")
