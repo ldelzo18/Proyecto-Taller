@@ -1,5 +1,5 @@
 
-def xd () :     
+def listado () :     
         contador_incacola = 0
         contador_cocacola = 0
         contador_fanta = 0
@@ -46,7 +46,7 @@ def xd () :
         precio_chokis = 0
 
         #Lista Bebidas energetica
-        bebidas_energetica =["Gaterode 500 ml " ,"Volt 330 ml" , "FreeTea 450 ml" , "Sporade"]
+        bebidas_energetica =["Gaterode 500 ml " ,"Volt 330 ml" , "FreeTea 450 ml" , "Sporade 500 ml"]
         precio_bebidas_energetica = [2.00 , 2.50 , 3.50 , 2.00]
         #Lista Gaseosa
         Gaseosa_producto =["Coca Cola 500 ml " , "Inca Cola 450 ml" , "Fanta 400 ml" , "Pepsi 500 ml"]
@@ -70,19 +70,19 @@ def xd () :
                                                         cantidad_incacola = int(input("seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_incacola) :
                                                                 contador_incacola += 1 
-                                                        break      
+                                                             
 
                                                 if (seleccion_gaseosa == "2"):
                                                         cantidad_cocacola = int(input("seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_cocacola) :
                                                                 contador_cocacola += 1     
-                                                        break
+                                                        
 
                                                 if (seleccion_gaseosa == "3"):
                                                         cantidad_fanta = int(input("seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_fanta) :
                                                                 contador_fanta += 1 
-                                                        break
+                                                break
                                         
                                 if (seleccion_bebidas == "2") :
                                         while True :
@@ -91,26 +91,25 @@ def xd () :
                                                         cantidad_volt = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_volt):
                                                                 contador_volt += 1
-                                                        break
-
+                                                        
                                                 if(seleccion_bebidas_energetica == "2"):
                                                         cantidad_gaterode = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_gaterode):
                                                                 contador_gaterode += 1
-                                                        break
+                                                        
 
                                                 if(seleccion_bebidas_energetica == "3"):
                                                         cantidad_sporade = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_sporade):
                                                                 contador_sporade += 1
-                                                        break
+                                                        
 
                                                 if(seleccion_bebidas_energetica == "4"):
                                                         cantidad_freetea = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_freetea):
                                                                 contador_freetea += 1
-                                                        break
-                                        
+                                                break
+                                                      
                         
                                 if (seleccion_bebidas == "3"):
                                         while True :
@@ -119,12 +118,12 @@ def xd () :
                                                         cantidad_san_mateo = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range (cantidad_san_mateo):
                                                                 contador_san_mateo += 1
-                                                        break
+                                                        
                                                 if(seleccion_agua == "2"):
                                                         cantidad_cielo = int(input("Seleccione cuantas deseas llevar \n"))
                                                         for i in range ( cantidad_cielo) :
                                                                 contador_cielo +=1
-                                                        break
+                                                break
                                 break  
 
                 if (seleccion == "2"):
@@ -134,53 +133,54 @@ def xd () :
                                         cantidad_picaras = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_picaras) :
                                                 contador_picaras += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "2"):
                                         cantidad_lay = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_lay) :
                                                 contador_lay += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "3"):
                                         cantidad_doritos = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_doritos) :
                                                 contador_doritos += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "4"):
                                         cantidad_soda_field= int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_soda_field) :
                                                 contador_soda_field += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "5"):
                                         cantidad_iberica = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_iberica) :
                                                 contador_iberica += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "6"):
                                         cantidad_sublime = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_sublime) :
                                                 contador_sublime += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "7"):
                                         cantidad_piqueo = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_piqueo) :
                                                 contador_piqueo += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "8"):
                                         cantidad_doña_pepa = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_doña_pepa) :
                                                 contador_doña_pepa += 1
-                                        break
+
                                 if(seleccion_galletas == "9"):
                                         cantidad_cereal_bar = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_cereal_bar) :
                                                 contador_cereal_bar += 1
-                                        break
+                                        
                                 if(seleccion_galletas == "10"):
                                         cantidad_chokis = int(input("Seleccione cuantas deseas llevar \n"))
                                         for i in range (cantidad_chokis) :
                                                 contador_chokis += 1
-                                        break
-                        break
+                                break
+                                        
+                        
 
 
                 #Gaseosas
@@ -223,13 +223,13 @@ def xd () :
 
                 #Galleta
                 if (contador_picaras >= 1 ):
-                        print("Cantidad :" , contador_picaras , "Nombre" , galleta_producto[0] ,"Precio por unidad" , galleta_precio[0])
+                        print("\nCantidad :" , contador_picaras , "\nNombre" , galleta_producto[0] ,"\nPrecio por unidad" , galleta_precio[0])
                         precio_picaras = contador_picaras*galleta_precio[0]
                 if (contador_lay >= 1 ):
                         print("Cantidad :" , contador_lay, "Nombre" , galleta_producto[1] ,"Precio por unidad" , galleta_precio[1])
                         precio_lay= contador_lay*galleta_precio[1]
                 if (contador_doritos >= 1 ):
-                        print("Cantidad :" , contador_san_mateo , "Nombre" , galleta_producto[2] ,"Precio por unidad" , galleta_precio[2])
+                        print("Cantidad :" , contador_doritos , "Nombre" , galleta_producto[2] ,"Precio por unidad" , galleta_precio[2])
                         precio_doritos=contador_doritos*galleta_precio[2]
                 if (contador_soda_field >= 1 ):
                         print("Cantidad :" , contador_soda_field , "Nombre" , galleta_producto[3] ,"Precio por unidad" , galleta_precio[3])
@@ -264,8 +264,9 @@ def xd () :
           
                 decision =  input ("Desea continuar Si o No \n")
                 if ( decision == "No"):
-                        print ("monto total",monto_total)
+                        print ("monto total" ,"S/",monto_total )
                         break
+listado()
 
 
 
