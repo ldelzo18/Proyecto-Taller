@@ -399,3 +399,9 @@ def botones_cuidado_personal_en():
     shampoo_HeadandShoulders_boton.grid(row=6,column=1,padx=10,pady=10)
 
     cui.mainloop()
+
+    def addInkaKola(lista_Producto,lista_Precios,cantidad):
+        for x in range(0,cantidad)
+            lista_Producto.append("Inka Kola 500 ml")
+            lista_Precios.append(2.00)
+        
