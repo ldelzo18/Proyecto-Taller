@@ -8,7 +8,6 @@ sis.resizable(False,False)
 sis.geometry("300x300")#300x350
 sis.configure(bg = "white")
 sis.title("Sistema de ventas")
-
 miLogo=PhotoImage(file="Img/Logo2.gif")
 
 
