@@ -8,6 +8,7 @@ __pycache__/
 *.json
 
 # Distribution / packaging
+.vscode
 .Python
 build/
 develop-eggs/
@@ -97,9 +98,10 @@ venv.bak/
 
 # Rope project settings
 .ropeproject
-
+ 
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+.vscode/settings.json

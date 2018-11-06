@@ -400,11 +400,14 @@ def botones_cuidado_personal_en():
 
     cui.mainloop()
 
+<<<<<<< HEAD
 
 
  
         
 
+=======
+>>>>>>> 43161bd7a0679bb062eb689b9e143c5b4d473df1
 def imprimirLista(lista_Producto,lista_Precios,textArea):
     temp = ""
     for x in lista_Producto:
@@ -414,7 +417,12 @@ def imprimirLista(lista_Producto,lista_Precios,textArea):
 
         
 
+<<<<<<< HEAD
 def addInkaKola(lista_Producto,lista_Precios,cantidad):
     for x in range(0,cantidad):
         lista_Producto.append("Inka Kola 500 ml")
         lista_Precios.append(2.00)
+=======
+
+        
+>>>>>>> 43161bd7a0679bb062eb689b9e143c5b4d473df1
