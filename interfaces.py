@@ -51,7 +51,7 @@ def gIEnglish():
     miBoton2 = ttk.Button(root, text = "Groceries",width=18,command =botones_abarrotes_en)
     miBoton2.grid(row=2,column=0,padx=20)
 
-    miBoton3 = ttk.Button(root, text = "Frozen Food",width=18,command =botones_congelados_en)
+    miBoton3 = ttk.Button(root, text = "Frozen Products",width=18,command =botones_congelados_en)
     miBoton3.grid(row=3,column=0,padx=20)
 
     miBoton4 = ttk.Button(root, text = "Ready to eat!",width=18,command =botones_comida_preparada_en)
