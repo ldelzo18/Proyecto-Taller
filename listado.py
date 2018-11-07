@@ -59,7 +59,7 @@ def listado () :
         galleta_precio = [0.70 , 0.50 , 1.00 , 0.60 , 3.40 , 1.00 , 1.20 , 0.70 , 1.00 , 1.30]
 
         while True :
-                seleccion =  input ("Seleccione \n1=Bebidas \n2=Galletas\n" )
+                seleccion =  input ("Seleccione \n1=Bebidas \n2=Abarrotes\n" )
                 if (seleccion == "1"):
                         while True :
                                 seleccion_bebidas = input("Seleccione \n 1=Gaseosa \n 2=Bedidas Energeticas \n 3=Bebidas(agua) \n")
@@ -267,8 +267,3 @@ def listado () :
                         print ("monto total" ,"S/",monto_total )
                         break
 listado()
-
-
-
-
-
