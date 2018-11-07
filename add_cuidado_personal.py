@@ -1,7 +1,7 @@
 def add_cuidado_personal(lista1,lista2,opcion):
     while True:
         if opcion == 0:
-            lista1.append("Shampo H&S Old Spice")
+            lista1.append("Shampo H&S Old Spice0")
             lista2.append(22.00)
         elif opcion = 1:
             lista1.append("Jabon Dove")
