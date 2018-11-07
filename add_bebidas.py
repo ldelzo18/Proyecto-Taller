@@ -3,7 +3,7 @@ def add_bebidas(lista1,lista2,opcion):
     while True:
         if opcion ==0: 
             lista1.append ("Inca Kola 500ml")  
-            lista2.append ( 2.00)
+            lista2.append (2.00)
         elif opcion == 1:
            lista1.append("Coca Kola 500ml")
            lista2.append(2.00)

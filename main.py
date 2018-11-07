@@ -1,4 +1,8 @@
-
+from add_abarrotes import *
+from add_bebidas import *
+from add_comidapreparada import *
+from add_congelados import *
+from add_cuidado_personal import *
 #=============================================== Variables del Main ======================================================#
 lista_Productos = []
 lista_Precios = []
@@ -50,7 +54,7 @@ def imprimir_Categorias():
     if opcionC == 1:
         while True:
             z = menu_bebidas()
-        
+            
             if z == 1:
                 break
 
@@ -69,7 +73,12 @@ def menu_bebidas():
 
     opcionB = (int)(input("Ingrese el producto que va a agregar a su carrito de compras:"))
 
-    if opcionB == 6:
+    if opcionB == 1:
+        add_bebidas(lista_Productos,lista_Precios,0)
+        print("El producto inka Kola fue agregado satisfactoriamente!")
+        return 1
+
+    elif opcionB == 6:
         return 1
 #=========================================================================================================================#
 
