@@ -3,27 +3,32 @@ from tkinter import *
 from interfaces import *
 #======================================================================================================================================#
 #============================================================Main class================================================================#
-class main(Frame):
-
-    def __init__(self,master):
-        frame = Frame(master)
-        frame.pack()
-
-        miLogo=PhotoImage(file="Img/Logo2.gif")
-
-        self.aviso = Label(frame,text="Bienvenido al Sistema de Ventas SuperMarket!")
-        self.logo = Label(frame, image = miLogo).place(x=90,y=40)
-
-ttk.Label(sis,image=miLogo).place(x=90,y=40)
-ttk.Label(sis,text='       Bienvenido a EasyBuy!\nEliga su idioma de preferencia',font=("Comic Sans MS",12)).place(x=40,y=95)
-ttk.Button(sis, text='English',command=gIEnglish).place(x=100,y=160)
-ttk.Button(sis,text='Español',command=gISpanish).place(x=100,y=210)
-
 root = Tk()
-root.geometry("600x600")
 root.resizable(False,False)
-root.configure(bg = "white")
+root.configure(bg = "deep sky blue")
 root.title("Sistema de ventas")
-a = main(root)
+root.geometry("600x600")
+
+frame = Frame(root,width = 70,heigh = 20,bg="sky blue")
+frame.grid(row=1,column=1)
+frame.pack()
+
+miLogo=PhotoImage(file="Img/Logo2.gif")
+
+aviso = Label(frame,text="Bienvenido al Sistema de Ventas SuperMarket!",font=("Comic Sans MS",12))
+aviso.grid(row=0,column=0,pady=8)
+
+logo = Label(frame, image = miLogo)
+logo.grid(row=1,column=0)
+
+aviso1= Label(frame,text='      Bienvenido a EasyBuy!\nEliga su idioma de preferencia',font=("Comic Sans MS",12))
+aviso1.grid(row=2,column=0,pady=8)
+
+botonEn = Button(frame, text='English',width=15,heigh=5,command=gIEnglish)
+botonEn.grid(row=3,column=0,pady=8)
+
+botonEs = Button(frame,text='Español',width=15,heigh=5,command=gISpanish)
+botonEs.grid(row=4,column=0,pady=8)
+
 root.mainloop()
 #=====================================================Fin de Main==========================================================================#
