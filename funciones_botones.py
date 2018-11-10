@@ -1,9 +1,11 @@
 from tkinter import *
 from tkinter import ttk
+from funciones_productos import *
+from interfaces import *
 
 
 def botones_bebidas_es():
-    beb = Tk()
+    beb = Toplevel()
     beb.title("Catalogo de Bebidas")
     beb.geometry("800x400")
     beb.resizable(False,False)
@@ -13,7 +15,7 @@ def botones_bebidas_es():
     
     myLabel1 = ttk.Label(beb,text="Cantidad:",font = ("Arial", 12))
     cantidad = Entry(beb)
-    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15)
+    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15,command=addInkaKola(list_Productos))
     cocaboton = Button(beb, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15)
     fantaboton = Button(beb, text ="  Fanta  500ml ",font = ("Arial", 12),width=15) 
     gateboton = Button(beb, text =" Gatorade 500ml ",font = ("Arial", 12),width=15)
@@ -44,7 +46,7 @@ def botones_bebidas_es():
 
 
 def botones_bebidas_en():
-    beb = Tk()
+    beb = Toplevel()
     beb.title("Drinks Catalogue")
     beb.geometry("800x400")
     beb.resizable(False,False)
@@ -83,7 +85,7 @@ def botones_bebidas_en():
     beb.mainloop()
 
 def botones_abarrotes_es():
-    aba = Tk()
+    aba = Toplevel()
     aba.title("Catalogo de Abarrotes")
     aba.geometry("800x400")
     aba.resizable(False,False)
@@ -122,7 +124,7 @@ def botones_abarrotes_es():
     aba.mainloop()
 
 def botones_abarrotes_en():
-    aba = Tk()
+    aba = Toplevel()
     aba.title("Groceries Catalogue")
     aba.geometry("800x400")
     aba.resizable(False,False)
@@ -162,7 +164,7 @@ def botones_abarrotes_en():
     aba.mainloop()    
 
 def botones_congelados_es():
-    cong = Tk()
+    cong = Toplevel()
     cong.title("Catalogo de Productos Congelados")
     cong.geometry("800x400")
     cong.resizable(False,False)
@@ -201,7 +203,7 @@ def botones_congelados_es():
     cong.mainloop()
 
 def botones_congelados_en():
-    cong = Tk()
+    cong = Toplevel()
     cong.title("Frozen Products Catalogue")
     cong.geometry("800x400")
     cong.resizable(False,False)
@@ -243,7 +245,7 @@ def botones_congelados_en():
 
 
 def botones_comida_preparada_es():
-    com = Tk()
+    com = Toplevel()
     com.title("Catalogo Comida Preparada")    
     com.geometry("800x400")
     com.resizable(False,False)
@@ -282,7 +284,7 @@ def botones_comida_preparada_es():
     com.mainloop()
 
 def botones_comida_preparada_en():
-    com = Tk()
+    com = Toplevel()
     com.title("Ready to take Catalogue")    
     com.geometry("800x400")
     com.resizable(False,False)
@@ -321,7 +323,7 @@ def botones_comida_preparada_en():
     com.mainloop()
 
 def botones_cuidado_personal_es():
-    cui = Tk()
+    cui = Toplevel()
     cui.title("Catalogo de Productos de Cuidado Personal")
     cui.geometry("800x400")
     cui.resizable(False,False)
@@ -362,7 +364,7 @@ def botones_cuidado_personal_es():
 
 
 def botones_cuidado_personal_en():
-    cui = Tk()
+    cui = Toplevel()
     cui.title("Catalogo de Productos de Cuidado Personal")
     cui.geometry("800x400")
     cui.resizable(False,False)

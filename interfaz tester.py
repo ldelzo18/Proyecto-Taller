@@ -2,7 +2,7 @@
 from tkinter import *
 from interfaces import *
 #======================================================================================================================================#
-#============================================================Main class================================================================#
+#============================================================GUI Main Part==============================================================#
 root = Tk()
 root.resizable(False,False)
 root.configure(bg = "deep sky blue")
@@ -21,7 +21,7 @@ aviso.grid(row=0,column=0,pady=8)
 logo = Label(frame, image = miLogo)
 logo.grid(row=1,column=0)
 
-aviso1= Label(frame,text='      Bienvenido a EasyBuy!\nEliga su idioma de preferencia',font=("Comic Sans MS",12))
+aviso1= Label(frame,text='Bienvenido a EasyBuy!\nEliga su idioma de preferencia',font=("Comic Sans MS",12))
 aviso1.grid(row=2,column=0,pady=8)
 
 botonEn = Button(frame, text='English',width=15,heigh=5,command=gIEnglish)

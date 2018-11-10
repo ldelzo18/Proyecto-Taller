@@ -1,12 +1,24 @@
+#================================================================Imports==============================================================#
 from tkinter import *
 from tkinter import ttk
 from funciones_botones import *
-def gISpanish():
-    #ArrayLists de productos y precios
-    list_producto = []
-    list_precios = []
+#====================================================================================================================================#
+#=======================================================Variables====================================================================#
+list_Productos = ["nada","nada"]
+#====================================================================================================================================#
+#======================================================Funcion imprimir==============================================================#
+def imprimirLista(lista,text):
+    temp = ""
+    for X in range(len(lista)):
+        temp += x
 
-    root = Tk()
+    text.insert(1.0,temp)
+#====================================================================================================================================#
+#======================================================Funcion gISpanish=============================================================#
+
+def gISpanish():
+
+    root = Toplevel()
     root.title("Sistema de Ventas")
     root.geometry("600x600")
     root.resizable(False,False)
@@ -34,19 +46,16 @@ def gISpanish():
     txt = Text(root,width=50,heigh=35,wrap=WORD)
     txt.grid(row=0,column=1,rowspan=7,sticky=E)
 
-    miBoton6 = ttk.Button(root, text = "Pagar",width=15,command = imprimirLista(list_producto,list_precios,txt))
+    miBoton6 = ttk.Button(root, text = "Imprimir",width=15,command = imprimirLista(list_Productos,txt))
     miBoton6.grid(row=6,column=0,padx=20)
 
-    
-
     root.mainloop()
-
+#========================================================================================================================#
+#==================================================Funcion gIEnglish=====================================================#
 def gIEnglish():
-    #ArrayLists de productos y precios
-    Producto = []
-    Precios = []
+ 
 
-    root = Tk()
+    root = Toplevel()
     root.title("Sales System")
     root.geometry("600x600")
 
@@ -75,3 +84,4 @@ def gIEnglish():
     txt.grid(row=0,column=1,rowspan=7,sticky=E)
 
     root.mainloop() 
+    #============================================================================================================================#
