@@ -14,9 +14,10 @@ class main(Frame):
         self.aviso = Label(frame,text="Bienvenido al Sistema de Ventas SuperMarket!")
         self.logo = Label(frame, image = miLogo).place(x=90,y=40)
 
-        self.aviso2 = Label(frame,text='       Bienvenido a OXXO!\nEliga su idioma de preferencia',font=("Comic Sans MS",12)).place(x=40,y=95)
-        self.botonEn = Button(frame, text='English',command=gIEnglish).place(x=100,y=160)
-        self.botonEs = Button(frame,text='Español',command=gISpanish).place(x=100,y=210)
+ttk.Label(sis,image=miLogo).place(x=90,y=40)
+ttk.Label(sis,text='       Bienvenido a EasyBuy!\nEliga su idioma de preferencia',font=("Comic Sans MS",12)).place(x=40,y=95)
+ttk.Button(sis, text='English',command=gIEnglish).place(x=100,y=160)
+ttk.Button(sis,text='Español',command=gISpanish).place(x=100,y=210)
 
 root = Tk()
 root.geometry("600x600")
