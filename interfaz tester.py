@@ -2,16 +2,10 @@
 from tkinter import *
 from interfaces import *
 #======================================================================================================================================#
-
 #============================================================Main class================================================================#
-class main:
+class main(Frame):
 
     def __init__(self,master):
-        self.geometry("600x600")
-        self.resizable(False,False)
-        self.configure(bg = "white")
-        self.title("Sistema de ventas")
-
         frame = Frame(master)
         frame.pack()
 
@@ -25,6 +19,10 @@ class main:
         self.botonEs = Button(frame,text='Español',command=gISpanish).place(x=100,y=210)
 
 root = Tk()
+root.geometry("600x600")
+root.resizable(False,False)
+root.configure(bg = "white")
+root.title("Sistema de ventas")
 a = main(root)
 root.mainloop()
 #=====================================================Fin de Main==========================================================================#
