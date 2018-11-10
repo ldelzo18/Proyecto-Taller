@@ -7,7 +7,9 @@ root = Tk()
 root.resizable(False,False)
 root.configure(bg = "deep sky blue")
 root.title("Sistema de ventas")
-root.geometry("600x600")
+root.geometry("400x400")
+root.config(relief="ridge",bd=15)
+
 
 frame = Frame(root,width = 70,heigh = 20,bg="sky blue")
 frame.grid(row=1,column=1)
