@@ -47,7 +47,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
 
         #=============================================#
         else:#Si el valor del entry(cantidad) se encuentra vacia
-                messagebox.showerror("Error","No se ha ingresado cantidad!")
+                messagebox.showerror("Error","No ha ingresado cantidad!")
                 commander.lift()#Mantener al frente la ventana actual
 
 
