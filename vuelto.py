@@ -3,7 +3,7 @@
 
 def vuelto ():
     while True :
-        monto_total= float(input("Ingrese el monto aqui :v"))
+        monto_total= float(input("Ingrese el monto aqui"))
         # El monto total deve ser positivo
         if monto_total >= 0 :
             break
@@ -19,7 +19,7 @@ def vuelto ():
     moneda_5 = 0
     moneda_2 = 0 
     moneda_1 = 0 
-    monedad_50centavos = 0 
+    moneda_50centavos = 0 
     moneda_20centavos = 0
     moneda_10centavos = 0
 
