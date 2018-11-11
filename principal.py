@@ -48,7 +48,7 @@ class principal:
         text_espacio = Text(root2,width=50,heigh=34,wrap=WORD)
         text_espacio.grid(row=1,column=0,padx=10,rowspan=7,sticky=E)
 
-        boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(carrito))
+        boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(root2,carrito))
         boton_Bebidas.grid(row=1,column=12,padx=15)
 
         boton_Abarrotes = Button(root2,text="ABARROTES",width=18,heigh=5,command=quit)

@@ -1,12 +1,11 @@
 def encontrar_posicion_Producto(lista,producto):
-    temp = 0
-    if len(lista) !=0:
-        for x in range(len(lista)):
-            if lista[x][0] == producto:
-                temp = x
-        return temp
+    for x in range(0,len(lista)):
+        if lista[x][0] == producto:#Si el producto ya se encuentra en la lista
+            return x
+            
+    return -1
 
-    return None
+
 
 def agregar_Lista(lista,nombre_producto,cantidad):
     
@@ -14,7 +13,7 @@ def agregar_Lista(lista,nombre_producto,cantidad):
         lista.append([nombre_producto,cantidad])
     else:#Si la lista ya contiene algun valor
         posicion = encontrar_posicion_Producto(lista,nombre_producto)
-        if posicion == None:
+        if posicion == -1:
             lista.append([nombre_producto,cantidad])
         else:
             lista[posicion][1] += cantidad

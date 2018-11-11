@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from funciones_productos import *
 
-def botones_bebidas_es(carrito_Bebidas):
+def botones_bebidas_es(lastWindow,carrito_Bebidas):
     beb = Toplevel()
     beb.title("Catalogo de Bebidas")
     beb.geometry("800x400")
@@ -15,16 +15,16 @@ def botones_bebidas_es(carrito_Bebidas):
     
     cantidad = Entry(beb)
 
-    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(beb,carrito_Bebidas,cantidad,0))
-    cocaboton = Button(beb, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15)
-    fantaboton = Button(beb, text ="  Fanta  500ml ",font = ("Arial", 12),width=15) 
-    gateboton = Button(beb, text =" Gatorade 500ml ",font = ("Arial", 12),width=15)
-    voltboton = Button(beb, text ="   Volt 450ml  ",font = ("Arial", 12),width=15)
-    pepsiboton = Button(beb, text ="  Pepsi 500ml ",font = ("Arial", 12),width=15)
-    freeboton = Button(beb, text ="  FreeTea 500ml ",font = ("Arial", 12),width=15)
-    sanboton = Button(beb, text="  San Luis 625ml ",font = ("Arial", 12),width=15)
-    cieloboton = Button(beb, text ="  Cielo 625ml ",font = ("Arial", 12),width=15)
-    sporboton = Button(beb, text="  Sporade  500ml ",font = ("Arial", 12),width=15)
+    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,0))
+    cocaboton = Button(beb, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,1))
+    fantaboton = Button(beb, text ="  Fanta  500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,2)) 
+    gateboton = Button(beb, text =" Gatorade 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,3))
+    voltboton = Button(beb, text ="   Volt 450ml  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,4))
+    pepsiboton = Button(beb, text ="  Pepsi 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,5))
+    freeboton = Button(beb, text ="  FreeTea 500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,6))
+    sanboton = Button(beb, text="  San Luis 625ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,7))
+    cieloboton = Button(beb, text ="  Cielo 625ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,8))
+    sporboton = Button(beb, text="  Sporade  500ml ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,beb,carrito_Bebidas,cantidad,9))
 
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)
