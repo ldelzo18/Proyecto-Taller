@@ -7,17 +7,10 @@ from funciones_botones import *
 list_Productos = ["nada","nada"]
 #====================================================================================================================================#
 #======================================================Funcion imprimir==============================================================#
-def imprimirLista(lista,text):
-    temp = ""
-    for X in range(len(lista)):
-        temp += x
 
-    text.insert(1.0,temp)
 #====================================================================================================================================#
 #======================================================Funcion gISpanish=============================================================#
-
 def gISpanish():
-
     root = Toplevel()
     root.title("Sistema de Ventas")
     root.geometry("600x600")
@@ -46,7 +39,7 @@ def gISpanish():
     txt = Text(root,width=50,heigh=35,wrap=WORD)
     txt.grid(row=0,column=1,rowspan=7,sticky=E)
 
-    miBoton6 = ttk.Button(root, text = "Imprimir",width=15,command = imprimirLista(list_Productos,txt))
+    miBoton6 = ttk.Button(root, text = "Imprimir",width=15,command = quit)
     miBoton6.grid(row=6,column=0,padx=20)
 
     root.mainloop()
