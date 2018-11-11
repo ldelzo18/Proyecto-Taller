@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import ttk
 from botones_funciones import *
+from otras_Funciones import *
 
 root = Tk()
 
@@ -63,12 +64,10 @@ class principal:
         boton_Cuidado_Personal = Button(root2,text="CUIDADO PERSONAL",width=18,heigh=5,command=quit)
         boton_Cuidado_Personal.grid(row=2,column=13,padx=15)
 
-        boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: self.funcion_imprimir(text_espacio,carrito))
+        boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
         boton_Imprimir_Carrito.grid(row=5,column=13,padx=15)
 
-    def funcion_imprimir(self,text,carrito):
-        text.delete(1.0,END)
-        text.insert(1.0,carrito)
+
         
 
     

@@ -1,11 +1,15 @@
+from tkinter import *
+
+def funcion_imprimir(text,carrito):
+    text.delete(1.0,END)
+    text.insert(1.0,carrito)
+
 def encontrar_posicion_Producto(lista,producto):
     for x in range(0,len(lista)):
         if lista[x][0] == producto:#Si el producto ya se encuentra en la lista
             return x
             
     return -1
-
-
 
 def agregar_Lista(lista,nombre_producto,cantidad):
     
