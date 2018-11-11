@@ -30,7 +30,7 @@ class principal:
 
     def interfaz_Es(self):
         #============================================= Atributos ========================================================#
-        carrito_Bebidas = [0,0,0,0,0,0,0,0,0,0]
+        carrito = []
 
         #================================================================================================================#
         root2 = Toplevel()
@@ -48,7 +48,7 @@ class principal:
         text_espacio = Text(root2,width=50,heigh=34,wrap=WORD)
         text_espacio.grid(row=1,column=0,padx=10,rowspan=7,sticky=E)
 
-        boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(carrito_Bebidas))
+        boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(carrito))
         boton_Bebidas.grid(row=1,column=12,padx=15)
 
         boton_Abarrotes = Button(root2,text="ABARROTES",width=18,heigh=5,command=quit)
@@ -63,7 +63,7 @@ class principal:
         boton_Cuidado_Personal = Button(root2,text="CUIDADO PERSONAL",width=18,heigh=5,command=quit)
         boton_Cuidado_Personal.grid(row=2,column=13,padx=15)
 
-        boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: self.funcion_imprimir(text_espacio,carrito_Bebidas))
+        boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: self.funcion_imprimir(text_espacio,carrito))
         boton_Imprimir_Carrito.grid(row=5,column=13,padx=15)
 
     def funcion_imprimir(self,text,carrito):
