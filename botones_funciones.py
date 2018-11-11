@@ -1,10 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 from funciones_productos import *
-from interfaces import *
 
-
-def botones_bebidas_es():
+def botones_bebidas_es(carrito_Bebidas):
     beb = Toplevel()
     beb.title("Catalogo de Bebidas")
     beb.geometry("800x400")
@@ -14,8 +12,10 @@ def botones_bebidas_es():
     titulo_categoria = Label(beb,text="BEBIDAS",font = ("TIMES NEW ROMAN", 16))
     
     myLabel1 = ttk.Label(beb,text="Cantidad:",font = ("Arial", 12))
+    
     cantidad = Entry(beb)
-    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15,command=addInkaKola(list_Productos))
+
+    inkaboton = Button(beb, text =" Inca Kola 500ml ",font = ("Arial", 12),width=15,command=lambda:addInkaKola(carrito_Bebidas,cantidad))
     cocaboton = Button(beb, text =" Coca Kola 500ml ",font = ("Arial", 12),width=15)
     fantaboton = Button(beb, text ="  Fanta  500ml ",font = ("Arial", 12),width=15) 
     gateboton = Button(beb, text =" Gatorade 500ml ",font = ("Arial", 12),width=15)
@@ -42,8 +42,6 @@ def botones_bebidas_es():
     sporboton.grid(row=4,column=3,padx=10,pady=10)
 
     beb.mainloop()
-
-
 
 def botones_bebidas_en():
     beb = Toplevel()

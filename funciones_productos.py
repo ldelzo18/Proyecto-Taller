@@ -1,5 +1,10 @@
-from interfaces import *
+def addInkaKola(lista_Bebidas,cantidad):
+        if cantidad.get() == '':#Si esta vacio
+                lista_Bebidas[0] += 0
+        else:
+                temp = int(cantidad.get())
+                lista_Bebidas[0] = temp
 
-def addInkaKola(lista_Producto):
-        for x in range(2):
-                lista_Producto.append("Inka Kola 500 ml")
+        
+
+        
