@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from botones_funciones import *
 from otras_Funciones import *
+import mysql.connector
 
 root = Tk()
 

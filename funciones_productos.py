@@ -110,7 +110,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
                 producto_nombre = "Pasta dental Dento"        
         elif cod_producto == 48:#Gillete2
                 producto_nombre = "Crema de afeitar Gillete"
-        elif cod_producto == 49:#H&S2
+        else:#H&S2
                 producto_nombre = "Shampoo H&S de menta 375ml"
         #===============Fin de identificacion========#
 
