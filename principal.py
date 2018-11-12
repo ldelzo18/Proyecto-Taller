@@ -31,9 +31,8 @@ class principal:
         self.botonEs.grid(row=4,column=0,pady=8)  
 
     def interfaz_Es(self):
-        #============================================= Atributos ========================================================#
+        #============================================= Carrito de compra ================================================#
         carrito = []
-
         #================================================================================================================#
         root2 = Toplevel()
         root2.title("Sistema de Ventas")
@@ -44,8 +43,11 @@ class principal:
         root2.configure(bg="pale turquoise")
 
 
-        titulo_pagina = Label(root2,text = "CATEGORIAS",bg = "pale turquoise",font = ("Comic Sans MS", 16))
+        titulo_pagina = Label(root2,text = "CARRITO",bg = "pale turquoise",font = ("Comic Sans MS", 16))
         titulo_pagina.grid(row=0,column=0,padx=20)
+
+        label2 = Label(root2,text = "CATEGORIAS",bg = "pale turquoise",font = ("Comic Sans MS", 16))
+        label2.grid(row=0,column=13,padx=20)
 
         text_espacio = Text(root2,width=78,heigh=32,wrap=WORD)
         text_espacio.grid(row=1,column=0,padx=10,rowspan=9,sticky=E)

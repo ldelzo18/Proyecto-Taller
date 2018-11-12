@@ -57,7 +57,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
         elif cod_producto == 22:#NestleMorochas
                 producto_nombre = "Nestle morochas 1L"
         elif cod_producto == 23:#Donofrio Tornado Lucuma      
-                producto_nombre = " Donofrio Tornado Lucuma 1L"
+                producto_nombre = "Donofrio Tornado  Lucuma 1L"
         elif cod_producto == 24:#Donofrio Tornado Vainilla
                 producto_nombre = "Donofrio Tornado Vainilla 1L"
         elif cod_producto == 25:#Nuggets
