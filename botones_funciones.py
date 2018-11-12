@@ -82,7 +82,7 @@ def botones_bebidas_en():
 
     beb.mainloop()
 
-def botones_abarrotes_es():
+def botones_abarrotes_es(lastWindow,carrito_abarrotes):
     aba = Toplevel()
     aba.title("Catalogo de Abarrotes")
     aba.geometry("800x400")
@@ -93,16 +93,16 @@ def botones_abarrotes_es():
     myLabel1 = ttk.Label(aba,text="Cantidad:",font = ("Arial", 12))
 
     cantidad = Entry(aba)
-    picaboton = Button(aba, text = "Picaras",font = ("Arial", 12),width=15)
-    laysboton = Button(aba, text = " Lays ",font = ("Arial", 12),width=15)
-    dorboton = Button(aba, text = "Doritos",font = ("Arial", 12),width=15)
-    sodboton = Button(aba, text =" Soda Field ",font = ("Arial", 12),width=15)
-    iberboton = Button(aba, text ="   Iberica  ",font = ("Arial", 12),width=15)
-    subboton = Button(aba, text ="  Sublime  ",font = ("Arial", 12),width=15)
-    piqboton = Button(aba, text =" Piqueo Snack ",font = ("Arial", 12),width=15)
-    doñaboton = Button(aba, text="  Doña Pepa  ",font = ("Arial", 12),width=15)
-    cereaboton = Button(aba, text ="  Cereal Bar  ",font = ("Arial", 12),width=15)
-    chokisboton = Button(aba, text="  Chokis  ",font = ("Arial", 12),width=15)
+    picaboton = Button(aba, text = "Picaras",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,10))
+    laysboton = Button(aba, text = " Lays ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,11))
+    dorboton = Button(aba, text = "Doritos",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,12))
+    sodboton = Button(aba, text =" Soda Field ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,13))
+    iberboton = Button(aba, text ="   Iberica  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,14))
+    subboton = Button(aba, text ="  Sublime  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,15))
+    piqboton = Button(aba, text =" Piqueo Snack ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,16))
+    doñaboton = Button(aba, text="  Doña Pepa  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,17))
+    cereaboton = Button(aba, text ="  Cereal Bar  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,18))
+    chokisboton = Button(aba, text="  Chokis  ",font = ("Arial", 12),width=15,command=lambda:add_Producto(lastWindow,aba,carrito_abarrotes,cantidad,19))
 
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)
@@ -161,7 +161,7 @@ def botones_abarrotes_en():
 
     aba.mainloop()    
 
-def botones_congelados_es():
+def botones_congelados_es(lastWindow,carrito_congelados):
     cong = Toplevel()
     cong.title("Catalogo de Productos Congelados")
     cong.geometry("800x400")
@@ -172,16 +172,16 @@ def botones_congelados_es():
     myLabel1 = ttk.Label(cong,text="Cantidad:",font = ("Arial", 12))
 
     cantidad= Entry(cong)
-    luboton = Button(cong, text =" Donofrio Lucuma 1L ",font = ("Arial", 12),width=25)
-    nesboton = Button(cong, text = " Nestle beso de moza 1L ",font = ("Arial", 12),width=25)
-    moroboton = Button(cong, text = " Nestle morochas 1L ",font = ("Arial", 12),width=25) 
-    torluboton = Button(cong, text =" Donofrio Tornado Lucuma 1L ",font = ("Arial", 12),width=25)
-    torvaboton = Button(cong , text = " Donofrio Tornado Vainilla 1L ",font = ("Arial", 12),width=25)
-    nuggboton = Button(cong, text ="  San Fernando 15 Nuggets ",font = ("Arial", 12),width=25)
-    hamboton = Button(cong, text =" San Fernando 6 hamburguesas",font = ("Arial", 12),width=25)
-    pizzpboton = Button(cong, text="  Pizza Peperoni  ",font = ("Arial", 12),width=25)
-    pizzamboton = Button(cong, text ="  Pizza Americana  ",font = ("Arial", 12),width=25)
-    raviboton = Button(cong, text=" Pack de Ravioles ",font = ("Arial", 12),width=25)    
+    luboton = Button(cong, text =" Donofrio Lucuma 1L ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,20))
+    nesboton = Button(cong, text = " Nestle beso de moza 1L ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,21))
+    moroboton = Button(cong, text = " Nestle morochas 1L ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,22))
+    torluboton = Button(cong, text =" Donofrio Tornado Lucuma 1L ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,23))
+    torvaboton = Button(cong , text = " Donofrio Tornado Vainilla 1L ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,24))
+    nuggboton = Button(cong, text ="  San Fernando 15 Nuggets ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,25))
+    hamboton = Button(cong, text =" San Fernando 6 hamburguesas",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,26))
+    pizzpboton = Button(cong, text="  Pizza Peperoni  ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,27))
+    pizzamboton = Button(cong, text ="  Pizza Americana  ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,28))
+    raviboton = Button(cong, text=" Pack de Ravioles ",font = ("Arial", 12),width=25,command=lambda:add_Producto(lastWindow,cong,carrito_congelados,cantidad,29))    
 
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)
@@ -242,7 +242,7 @@ def botones_congelados_en():
 
 
 
-def botones_comida_preparada_es():
+def botones_comida_preparada_es(lastWindow, carrito_comidas):
     com = Toplevel()
     com.title("Catalogo Comida Preparada")    
     com.geometry("800x400")
@@ -253,16 +253,16 @@ def botones_comida_preparada_es():
     myLabel1 = ttk.Label(com,text="Cantidad:",font = ("Arial", 12))
 
     cantidad = Entry(com)
-    hamb_car_boton = Button(com, text = " Hamburguesa de Carne ",font = ("Arial", 12),width=25)
-    hamb_po_boton = Button(com, text = " Hamburguesa de Pollo ",font = ("Arial", 12),width=25)
-    empa_car_boton = Button(com, text = " Empanada de Carne ",font = ("Arial", 12),width=25)
-    empa_po_boton = Button(com, text = " Empanada de Pollo ",font = ("Arial", 12),width=25)
-    pollo_frito_boton = Button(com, text = " Pollo Frito ",font = ("Arial", 12),width=25)
-    wrap_pollo_boton = Button(com, text = " Wrap de Pollo",font = ("Arial", 12),width=25)
-    wrap_carne_boton = Button(com, text = " Wrap de Carne ",font = ("Arial", 12),width=25)
-    choripan_boton = Button(com, text = " Choripan ",font = ("Arial", 12),width=25)
-    SiuMai_boton = Button(com, text = " Siu May ",font = ("Arial", 12),width=25)
-    MinPao_boton = Button(com, text = " Min Pao" ,font = ("Arial", 12),width=25)
+    hamb_car_boton = Button(com, text = " Hamburguesa de Carne ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,30))
+    hamb_po_boton = Button(com, text = " Hamburguesa de Pollo ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,31))
+    empa_car_boton = Button(com, text = " Empanada de Carne ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,32))
+    empa_po_boton = Button(com, text = " Empanada de Pollo ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,33))
+    pollo_frito_boton = Button(com, text = " Pollo Frito ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,34))
+    wrap_pollo_boton = Button(com, text = " Wrap de Pollo",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,35))
+    wrap_carne_boton = Button(com, text = " Wrap de Carne ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,36))
+    choripan_boton = Button(com, text = " Choripan ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,37))
+    SiuMai_boton = Button(com, text = " Siu May ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,38))
+    MinPao_boton = Button(com, text = " Min Pao" ,font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,com,carrito_comidas,cantidad,39))
 
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)
@@ -320,7 +320,7 @@ def botones_comida_preparada_en():
 
     com.mainloop()
 
-def botones_cuidado_personal_es():
+def botones_cuidado_personal_es(lastWindow,carrito_cuidados):
     cui = Toplevel()
     cui.title("Catalogo de Productos de Cuidado Personal")
     cui.geometry("800x400")
@@ -331,16 +331,16 @@ def botones_cuidado_personal_es():
     myLabel1 = ttk.Label(cui,text="Cantidad:",font = ("Arial", 12))
 
     cantidad = Entry(cui)
-    jabon_boton = Button(cui, text = " Jabon Dove ",font = ("Arial", 12),width=25)
-    shamp_boton = Button(cui, text = " H&S Old Spice ",font = ("Arial", 12),width=25)
-    pasta_boton = Button(cui, text = " Pasta de dientes Colgate ",font = ("Arial", 12),width=25)
-    cepi_boton = Button(cui, text = " Cepillo Colgate ",font = ("Arial", 12),width=25)
-    gill_boton = Button(cui, text = " Hoja de afeitar Gillet ",font = ("Arial", 12),width=25)
-    lady_boton = Button(cui, text = " Toallas femeninas LadySoft ",font = ("Arial", 12),width=25)
-    enjuage_listerine_boton = Button(cui, text = " Listerine 500 ML ",font = ("Arial", 12),width=25)
-    pasta_Dento_boton = Button(cui, text = " Pasta Dento ",font = ("Arial", 12),width=25)
-    crema_Gillete_boton = Button(cui, text = " Crema de Afeitar Gillete ",font = ("Arial", 12),width=25)
-    shampoo_HeadandShoulders_boton = Button(cui, text = " Head & Shoulders 375 ML ",font = ("Arial", 12),width=25)
+    jabon_boton = Button(cui, text = " Jabon Dove ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,40))
+    shamp_boton = Button(cui, text = " H&S Old Spice ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,41))
+    pasta_boton = Button(cui, text = " Pasta de dientes Colgate ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,42))
+    cepi_boton = Button(cui, text = " Cepillo Colgate ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,43))
+    gill_boton = Button(cui, text = " Hoja de afeitar Gillet ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,44))
+    lady_boton = Button(cui, text = " Toallas femeninas LadySoft ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,45))
+    enjuage_listerine_boton = Button(cui, text = " Listerine 500 ML ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,46))
+    pasta_Dento_boton = Button(cui, text = " Pasta Dento ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,47))
+    crema_Gillete_boton = Button(cui, text = " Crema de Afeitar Gillete ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,48))
+    shampoo_HeadandShoulders_boton = Button(cui, text = " Head & Shoulders 375 ML ",font = ("Arial", 12),width=25,command=lambda: add_Producto(lastWindow,cui,carrito_cuidados,cantidad,49))
 
     titulo_categoria.grid(row=0,column=0,padx=5,pady=5)
     myLabel1.grid(row=1,column=0,padx=5,pady=5)

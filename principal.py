@@ -53,16 +53,16 @@ class principal:
         boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(root2,carrito))
         boton_Bebidas.grid(row=1,column=12,padx=15)
 
-        boton_Abarrotes = Button(root2,text="ABARROTES",width=18,heigh=5,command=quit)
+        boton_Abarrotes = Button(root2,text="ABARROTES",width=18,heigh=5,command=lambda: botones_abarrotes_es(root2,carrito))
         boton_Abarrotes.grid(row=1,column=13,padx=15)
 
-        boton_Congelados = Button(root2,text="CONGELADOS",width=18,heigh=5,command=quit)
+        boton_Congelados = Button(root2,text="CONGELADOS",width=18,heigh=5,command=lambda: botones_congelados_es(root2,carrito))
         boton_Congelados.grid(row=1,column=14,padx=15)
 
-        boton_Comida_Preparada = Button(root2,text="COMIDA PREPARADA",width=18,heigh=5,command=quit)
+        boton_Comida_Preparada = Button(root2,text="COMIDA PREPARADA",width=18,heigh=5,command=lambda: botones_comida_preparada_es(root2,carrito))
         boton_Comida_Preparada.grid(row=2,column=12,padx=15)
 
-        boton_Cuidado_Personal = Button(root2,text="CUIDADO PERSONAL",width=18,heigh=5,command=quit)
+        boton_Cuidado_Personal = Button(root2,text="CUIDADO PERSONAL",width=18,heigh=5,command=lambda: botones_cuidado_personal_es(root2,carrito))
         boton_Cuidado_Personal.grid(row=2,column=13,padx=15)
 
         boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
