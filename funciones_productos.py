@@ -46,7 +46,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
         elif cod_producto == 17:#doñapepa                
                 producto_nombre = "Doña Pepa"
         elif cod_producto == 18:#cerealbar
-                producto_nombre = "Barra energitca Cereal bar"
+                producto_nombre = "Barra energetica Cereal bar"
         elif cod_producto == 19:#chokis
                 producto_nombre = "Galleta Chokis"
                         #-Congelados-#
@@ -101,7 +101,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
         elif cod_producto == 43:#Colgate2
                 producto_nombre = "Cepillo dental Colgate"
         elif cod_producto == 44:#Gillet
-                producto_nombre = "Hoja de afeitar gillet"
+                producto_nombre = "Hoja de afeitar gillete"
         elif cod_producto == 45:#LadySoft        
                 producto_nombre = "Toallas femeninas LadySoft"
         elif cod_producto == 46:#Listerine
