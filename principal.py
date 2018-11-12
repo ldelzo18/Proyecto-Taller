@@ -2,7 +2,7 @@ from tkinter import *
 from tkinter import ttk
 from botones_funciones import *
 from otras_Funciones import *
-import mysql.connector
+from funciones_mysql import *
 
 root = Tk()
 
@@ -37,7 +37,7 @@ class principal:
         #================================================================================================================#
         root2 = Toplevel()
         root2.title("Sistema de Ventas")
-        root2.geometry("1000x600")
+        root2.geometry("1300x600")
         root2.config(relief="ridge",bd=10)
         root2.resizable(False,False)
         
@@ -47,8 +47,8 @@ class principal:
         titulo_pagina = Label(root2,text = "CATEGORIAS",bg = "pale turquoise",font = ("Comic Sans MS", 16))
         titulo_pagina.grid(row=0,column=0,padx=20)
 
-        text_espacio = Text(root2,width=50,heigh=34,wrap=WORD)
-        text_espacio.grid(row=1,column=0,padx=10,rowspan=7,sticky=E)
+        text_espacio = Text(root2,width=78,heigh=32,wrap=WORD)
+        text_espacio.grid(row=1,column=0,padx=10,rowspan=9,sticky=E)
 
         boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(root2,carrito))
         boton_Bebidas.grid(row=1,column=12,padx=15)
@@ -68,10 +68,8 @@ class principal:
         boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
         boton_Imprimir_Carrito.grid(row=5,column=13,padx=15)
 
+        retornar_precio('Inka Kola 500 ml')
 
-        
-
-    
 #========================================== Main =============================================================================#
 root.resizable(False,False)
 root.title("Sistema de Ventas")
