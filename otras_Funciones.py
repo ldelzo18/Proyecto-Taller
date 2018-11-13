@@ -1,14 +1,17 @@
 from tkinter import *
 from funciones_mysql import * 
+import time
 
 def funcion_imprimir(text,carrito):
 
     if len(carrito) != 0:#SOLO IMPRIMIR BOLETA SI ES QUE EL CARRITO TIENE ALGUN PRODUCTO
         monto = 0
-        temp = "******************** SUPERMARKET***********************\n"
-        temp += "******************Boleta de Venta*********************\n\n"
+        temp = "*************************Sistema de Ventas EastBuy!**************************\n"
+        temp += "*****************************Boleta de Venta********************************\n"
+        temp += 'Fecha:'+time.strftime("%Y-%m-%d %H:%M")+'\n\n'
         temp += '{:<30s}{:>10s}{:^22s}{:>8s}'.format("PRODUCTO","CANTIDAD","PRECIO UNITARIO","PRECIO TOTAL")
         temp += '\n-------------------------------------------------------------------------'
+        
     
         for x in range(len(carrito)):
             producto = carrito[x][0]#String que indica el nombre del producto

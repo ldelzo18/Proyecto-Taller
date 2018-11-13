@@ -1,7 +1,7 @@
 from otras_Funciones import *
 from tkinter import messagebox
 
-def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
+def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto,idioma):
         #==========Atributos========#
         producto_nombre = ''
         #===========================#
@@ -121,18 +121,30 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto):
                 try:#Aplicando excepciones en caso que el valor guardado en cantidad no pueda ser convertido a entero
                         temporal_int = int(cantidad.get())
                         agregar_Lista(lista_Bebidas,producto_nombre,temporal_int)#Agregando producto al carrito
-                        messagebox.showinfo("Aviso","Se ingreso el producto satisfactoriamente!")#Mostrando verificacion de proceso como aviso
+                        
+                        if idioma == 'es':
+                                messagebox.showinfo("Aviso","Se ingreso el producto satisfactoriamente!")#Mostrando verificacion de proceso como aviso
+                        elif idioma == 'en':
+                                messagebox.showinfo("Info","The product was added to the cart correctly!")#Mostrando verificacion de proceso como aviso
+
                         lastWindow.lift()#Forzar a ventana interfaz_Es a estar al frente
                         commander.destroy()#Cerrar la ventana actual
 
                 except:#En caso de error en el valor de cantidad
-                        messagebox.showerror("Error","La cantidad ingresa no es valida!")
+                        if idioma == 'es':
+                                messagebox.showerror("Error","La cantidad ingresa no es valida!")
+                        elif idioma == 'en':
+                                messagebox.showerror("Error","The quantity entered is not valid!")
+
                         lastWindow.lift()#Forzar a ventana interfaz_Es a estar al frente
                         commander.destroy()#Cerrar la ventana actual
 
         #=============================================#
         else:#Si el valor del entry(cantidad) se encuentra vacia
-                messagebox.showerror("Error","No ha ingresado cantidad!")
+                if idioma == 'es':
+                        messagebox.showerror("Error","No ha ingresado cantidad!")
+                elif idioma == 'en':
+                        messagebox.showerror("Error","No quantity was entered!")
                 commander.lift()#Mantener al frente la ventana actual
 
 
