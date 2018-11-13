@@ -9,10 +9,10 @@ Proyecto de final de curso Taller de Software
 •Delzo Espinoza, Luis Gustavo
 •Manco Cornejo, Jose Fabrizio
 
-#Descripción del proyecto:
+# Descripción del proyecto:
 •Nuestro sistema de ventas cuenta con una ordenada lista de productos y fáciles de usar.
 
-#Manual de instalacion y uso :
+# Manual de instalacion y uso :
 • 1.Al ejecutar aparecera un menu que deve seleccionar a su idioma conveniente : ingles o español,
 
 • 2.El siguiente paso sería darle clic a una categoría.
