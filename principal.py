@@ -38,7 +38,7 @@ class principal:
         #================================================================================================================#
         root2 = Toplevel()
         root2.title("Sistema de Ventas")
-        root2.geometry("1300x600")
+        root2.geometry("1400x600")
         root2.config(relief="ridge",bd=10)
         root2.resizable(False,False)
         root2.configure(bg="pale turquoise")
@@ -52,7 +52,7 @@ class principal:
         label2 = Label(root2,text = "CATEGORIAS",bg = "pale turquoise",font = ("Comic Sans MS", 16))
         label2.grid(row=0,column=13,padx=20)
 
-        text_espacio = Text(root2,width=78,heigh=32,wrap=WORD)
+        text_espacio = Text(root2,width=95,heigh=32,wrap=WORD)
         text_espacio.grid(row=1,column=0,padx=10,rowspan=9,sticky=E)
 
         boton_Bebidas = Button(root2,text="BEBIDAS",width= 18,heigh=5,command=lambda: botones_bebidas_es(root2,carrito))
@@ -87,7 +87,7 @@ class principal:
         #boton_manager = Button(root2,text="Manager",width=18,heigh=3)
         #boton_manager.grid(row=3,column=12,rowspan=2)
 
-        boton_eliminar = Button(root2,text="Eliminar producto",width=18,heigh=3)
+        boton_eliminar = Button(root2,text="Eliminar producto",width=18,heigh=3,command=lambda:interfaz_eliminar(carrito,'es'))
         boton_eliminar.grid(row=4,column=12,rowspan=2)
 
         boton_Imprimir_Carrito = Button(root2,text="Imprimir boleta",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))

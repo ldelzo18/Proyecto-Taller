@@ -586,6 +586,70 @@ def interfaz_pagar(carrito,idioma):
         else:
             messagebox.showerror('Error','The cart is empty!')
 
+def eliminar(commander,campo_cod,campo_cantidad,carrito):
+    
+    try:
+        cod = int(campo_cod.get())
+        cantidad = int(campo_cantidad.get())
+        index = -1
+        encontrado = False
+
+        for x in range(len(carrito)):
+            if carrito[x][2] == cod:
+                index = x
+                encontrado = True
+        
+        if encontrado == True:
+            if carrito[index][1] < cantidad:
+                messagebox.showerror('Error','La cantidad ingresada es mayor a la almacenada en el carrito')
+
+            elif carrito[index][1] == cantidad:
+                carrito.pop(index)
+                messagebox.showinfo('Info',"El producto fue eliminado!")
+                commander.destroy()
+
+            else:
+                carrito[index][1] -= cantidad
+                messagebox.showinfo("Info","La cantidad ingresada fue eliminada")
+                commander.destroy()
+        else:
+            messagebox.showerror('Error','No se encontro el producto en el carrito')
+
+    except:
+        messagebox.showerror("Error","Los valores ingresados no son validos!")
+
+def interfaz_eliminar(carrito,idioma):
+
+    if idioma == 'es':
+
+        if len(carrito) == 0:#Si el carrito esta vacio
+            messagebox.showerror("Error","El carrito esta vacio!")
+        
+        else:
+            el = Toplevel()
+            el.title("Eliminar Producto")
+            el.resizable(False,False)
+
+            label1 = Label(el,text="COD:")
+            label1.grid(row=0,column=0)
+
+            label2 = Label(el,text="Cantidad a eliminar:")
+            label2.grid(row=1,column=0)
+
+            campo1 = Entry(el,width=25)
+            campo1.grid(row=0,column=1)
+            
+            campo2 = Entry(el,width=25)
+            campo2.grid(row=1,column=1)
+
+            boton_eliminar = Button(el,text="ELIMINAR",width=20,command=lambda:eliminar(el,campo1,campo2,carrito))
+            boton_eliminar.grid(row=2,column=0)
+
+    elif idioma == 'en':
+        if len(carrito) == 0:#Si el carrito esta vacio
+            messagebox.showerror("Error","The cart is empty!")
+
+
 
     
 

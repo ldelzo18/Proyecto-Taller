@@ -120,7 +120,7 @@ def add_Producto(lastWindow,commander,lista_Bebidas,cantidad,cod_producto,idioma
                 
                 try:#Aplicando excepciones en caso que el valor guardado en cantidad no pueda ser convertido a entero
                         temporal_int = int(cantidad.get())
-                        agregar_Lista(lista_Bebidas,producto_nombre,temporal_int)#Agregando producto al carrito
+                        agregar_Lista(lista_Bebidas,producto_nombre,temporal_int,cod_producto)#Agregando producto al carrito
                         
                         if idioma == 'es':
                                 messagebox.showinfo("Aviso","Se ingreso el producto satisfactoriamente!")#Mostrando verificacion de proceso como aviso
