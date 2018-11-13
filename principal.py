@@ -74,6 +74,8 @@ class principal:
         boton_Pagar = Button(root2,text="Pagar",width=18,heigh=3,command=lambda:interfaz_pagar(carrito))
         boton_Pagar.grid(row=7,column=14,padx=15,rowspan=2)
 
+        boton_finalizar = Button(root2,text="Finalizar",width=12,heigh=3,command=quit)
+        boton_finalizar.grid(row=7,column=15,padx=15,rowspan=2)
         retornar_precio('Inka Kola 500 ml')
         # Version Ingles
     def interfaz_In (self):
@@ -107,8 +109,11 @@ class principal:
         boton_Cuidado_Personal_ingles.grid(row=2,column=13,padx=15)
 
         boton_Imprimir_Carrito_ingles = Button(root2,text="CART PRINT",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
-        boton_Imprimir_Carrito_ingles.grid(row=5,column=13,padx=15)
-
+        boton_Imprimir_Carrito_ingles.grid(row=7,column=13,padx=12,rowspan=2)
+        boton_finalizar_ingles = Button(root2,text="QUIT",width=12,heigh=3,command=quit) 
+        boton_finalizar_ingles.grid(row=7,column=15,padx=14,rowspan=2)
+        boton_Pagar_ingles = Button(root2,text="PAY",width=18,heigh=3,command=lambda:interfaz_pagar(carrito))
+        boton_Pagar_ingles.grid(row=7,column=14,padx=13,rowspan=2)
 #========================================== Main =============================================================================#
 root.resizable(False,False)
 root.title("Sistema de Ventas")
