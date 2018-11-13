@@ -67,8 +67,11 @@ class principal:
         boton_Cuidado_Personal = Button(root2,text="CUIDADO PERSONAL",width=18,heigh=5,command=lambda: botones_cuidado_personal_es(root2,carrito))
         boton_Cuidado_Personal.grid(row=2,column=13,padx=15)
 
-        boton_Imprimir_Carrito = Button(root2,text="Imprimir Carrito",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
-        boton_Imprimir_Carrito.grid(row=5,column=13,padx=15)
+        boton_Imprimir_Carrito = Button(root2,text="Imprimir boleta",width=18,heigh=3,command=lambda: funcion_imprimir(text_espacio,carrito))
+        boton_Imprimir_Carrito.grid(row=7,column=13,padx=15,rowspan=2)
+
+        boton_Pagar = Button(root2,text="Pagar",width=18,heigh=3,command=lambda:interfaz_pagar(carrito))
+        boton_Pagar.grid(row=7,column=14,padx=15,rowspan=2)
 
         retornar_precio('Inka Kola 500 ml')
 

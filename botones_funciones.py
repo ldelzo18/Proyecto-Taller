@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import ttk
 from funciones_productos import *
+from tkinter import messagebox
+from funciones_mysql import *
 
 def botones_bebidas_es(lastWindow,carrito_Bebidas):
     beb = Toplevel()
@@ -399,6 +401,66 @@ def botones_cuidado_personal_en():
     shampoo_HeadandShoulders_boton.grid(row=6,column=1,padx=10,pady=10)
 
     cui.mainloop()
+
+def pagar_efectivo(total,montoDeUsuario,commander,carrito):
+    
+    if montoDeUsuario >= total:
+        messagebox.showinfo('PAGO','Su pago se realizo satisfactoriamente\nSu vuelto es de '+str(montoDeUsuario-total))
+        carrito.clear()
+        commander.destroy()
+    else:
+        messagebox.showerror('ERROR','El monto ingresado no es suficiente!')
+
+def pagar_dc(total,montoDeUsuario,commander,carrito):
+    temp = 'Todo pago por tarjeta de debito o credito\ntiene un recargo de 5 soles\nEsta de acuerdo con proceder a pagar?'
+    result = messagebox.askquestion('PAGO DEBITO/CREDITO',temp)
+
+    if result == 'yes':
+        messagebox.showinfo('PAGO','Su pago se ha realizado satisfactoriamente: '+str(total+5))
+        carrito.clear()
+        commander.destroy()
+    else:
+        messagebox.showinfo('PAGO','No se ha cargado ningun valor a su tarjeta')
+
+def interfaz_pagar(carrito):
+    
+    if len(carrito) != 0:
+        
+        total = 0
+
+        for x in range(len(carrito)):
+            valor = retornar_precio(carrito[x][0])
+            total += valor * (carrito[x][1])
+
+
+
+        loader = Toplevel()
+        loader.title("Medio de Pago")
+        loader.resizable(False,False)
+        loader.geometry("400x300")
+        loader.configure(bg="pale turquoise",relief='groove',bd=10)
+
+        frame = Frame(loader,bg='skyblue',width=300,heigh=100)
+        frame.pack()
+
+        monto_usuario = DoubleVar()
+        monto_usuario.set(total)
+        mensaje1 = Label(frame,text="TOTAL A PAGAR:",font = ("TIMES NEW ROMAN", 12),bg= 'sky blue').place(x=30,y=10)
+        mostrarTotal = Label(frame,text=str(total)+' soles',font = ("TIMES NEW ROMAN", 12),bg= 'sky blue').place(x=200,y=10)
+        label1 = Label(frame,text="Monto a ingresar:",font = ("TIMES NEW ROMAN", 12),bg='skyblue').place(x=30,y=40)
+        entrada1 = Entry(frame,textvariable=monto_usuario).place(x=150,y=40)
+
+        boton_efectivo = Button(loader,text='EFECTIVO',width=30,command=lambda:pagar_efectivo(total,monto_usuario.get(),loader,carrito)).place(x=80,y=150)
+        boton_dc = Button(loader,text='DEBITO/CREDITO',width=30,command=lambda:pagar_dc(total,monto_usuario.get(),loader,carrito)).place(x=80,y=200)
+    
+    
+    else:
+        messagebox.showerror('Error','No hay nada en el carrito!')
+
+
+
+    
+
 
 
 
